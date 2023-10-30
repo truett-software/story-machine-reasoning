@@ -1,0 +1,10 @@
+
+RDFa
+
+terms-riddle.html
+has right gutter problem on mobile
+
+valid AMP
+
+reset links to local file, not file in russia
+

@@ -1,0 +1,152 @@
+Title:
+
+    Copywriting project to tell a complex story in simple terms
+
+Project:
+
+    Tell a story in ~10 slides
+
+Story topic:
+
+    Einstein's Riddle (aka Zebra Puzzle)
+    Reference: Wikipedia
+        https://en.wikipedia.org/wiki/Zebra_Puzzle
+
+Title (draft):
+
+    Reasoning solves Einstein's Riddle
+
+Presentation format:
+
+    Google Web Stories
+        https://stories.google/
+
+Presentation example - Washington Post:
+
+    https://www.washingtonpost.com/graphics/2019/lifestyle/travel/amp-stories/a-locals-guide-to-what-to-eat-and-do-in-new-york-city/
+
+Web Stories format enables three levels of detail:
+
+    level-1
+        main slide
+        example where an image is on left and text is on right
+            https://afdsi.com/story-sdl/
+            https://afdsi.com/story-sdl/#page=item-16
+        examples running a program on a slide
+            https://afdsi.com/story-sdl/#page=item-22
+
+    level-2
+        "Read more"
+        Structure is similar to PowerPoint reader notes - detail that complements level-1 slide
+
+    level-3
+        Exit to a separate HTML page that presents code or more detail than fits the Web Story format
+
+Presentation example - Telegraph
+
+    Illustrates side-by-side (but missing "Read More"):
+        https://www.telegraph.co.uk/visual-stories/regain-work-life-balance/
+    Works well in mobile (see mobile preview in Chrome or Mozilla)
+
+Story objective:
+
+    Explain technologies and methods to solve complex problems
+
+Technologies to solve complex problems:
+
+    Ontologies
+        Ontology is a description (like a formal specification of a program) of concepts and their relationships.
+        Its main purpose is to capture knowledge about a domain.
+        Generally, it does that by providing sets of machine-readable statements.
+        It also contains links, descriptions and classification of terms as well as the relationships between them.
+
+    Inferencing
+
+        A process of deriving additional information from data.
+
+    Reasoners
+
+        A reasoner is a software program that performs inferencing.
+
+        Reasoning examples:
+            Check accuracy and consistency of an ontology.
+            Verify that a food label is consistent with a food labeling specification
+            Identify subsumption relationships (i.e. "is a" relationship);
+            Check the content of a triple store
+            Solve Einstein's Riddle (Zebra Puzzle)
+
+        Reasoner background:
+            http://n3.restdesc.org/
+            http://reasoning.restdesc.org/
+    Tools
+
+        Protege
+            https://en.wikipedia.org/wiki/Prot%C3%A9g%C3%A9_(software)
+            https://protege.stanford.edu/
+
+        HermiT Descriptive Logic reasoner installed in Protege
+            http://www.hermit-reasoner.com/
+
+        Wikipedia references
+            https://en.wikipedia.org/wiki/Deductive_reasoning
+            https://en.wikipedia.org/wiki/Universal_quantification
+            https://en.wikipedia.org/wiki/Variable_%28computer_science%29
+            https://en.wikipedia.org/wiki/Symmetric_relation
+            https://en.wikipedia.org/wiki/Knowledge_engineering
+
+
+Story detail links:
+
+    Puzzle implemented as an ontology:
+
+        Einstein's Riddle ontology [machine readable format]
+            https://afdsi.com/___supplier/story-einstein-riddle/zebra-puzzle.txt
+
+        Einstein's Riddle ontology documentation [human readable format]
+            https://afdsi.com/___supplier/story-einstein-riddle/einstein-riddle-lode.html
+
+        Einstein's Riddle ontology terms and relationships [human readable format]
+            https://afdsi.com/___supplier/story-einstein-riddle/einstein-riddle-terms.html
+
+        Einstein's Riddle description using OWL [human readable format]
+            https://afdsi.com/___supplier/story-einstein-riddle/einstein-riddle-description-OWL.html
+
+ERROR: these also contain the solutions; remove the solution sections
+    Configuring Protege to solve Einstein's Riddle
+
+        statement-1
+            https://afdsi.com/___supplier/story-einstein-riddle/einstein-riddle-part-1.png
+
+        statement-2
+            https://afdsi.com/___supplier/story-einstein-riddle/einstein-riddle-part-2.png
+
+SOLUTION:
+    Reasoned solution to Einstein's Riddle
+
+        slide-3 (don't peek)
+            https://afdsi.com/___supplier/story-einstein-riddle/japanese.png
+
+        slide-4 (don't peek) 
+            https://afdsi.com/___supplier/story-einstein-riddle/norwegian.png
+
+Visual elements for the story:
+
+    wrap the Protege + HermiT screen shots with a Story
+
+Story copy:
+
+    To a reasonable degree, copy will conform to this test:
+        https://splasho.com/upgoer5/
+
+Story constrains:
+
+    Ultimately need to translate into 14 different Natural Languages, so must minimize en-US jargon
+
+Examples we admire:
+
+    https://quixoticnomad.blog/technical-copywriting-what-engineers-can-learn-from-apples-m1-macbook-marketing-campaign/
+
+Good advice:
+
+    http://www.jilles.net/perma/2020/06/05/presentation-rules.html
+

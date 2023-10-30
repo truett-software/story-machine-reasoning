@@ -1,0 +1,38 @@
+
+All classes are set as pairwise disjoint.
+
+Each class is defined as equivalent to the set of its members (this is called a closed class). This is done to ensure that they cannot have other members (remember the OWA).
+
+The relationships between Person and Drink, Pet, Smoke and House, and between House and Color are defined by setting the correct domain and range. Additionally, all these ObjectProperties are defined as functional and inverse functional. This is to ensure that, e.g., a person drinks at most one drink and that a drink is drunk by at most one person.
+
+So far we have stated that a person drinks at most one drink. To make sure that a person does not drink zero drinks, we state that the class Person is subclass of the class that has one drinks relationship—and repeat an equivalent approach to the other classes that a person is related to. Similarly, we do the same for houses; a house has a color.
+
+1   There are five houses.
+2   They are all different.
+3   The second house lies to the right of the first house, the third to the right of the second house, and so on, but no house lies to the right of the fifth house and no house is left of the first house.
+4   If a house A lies right of a house B, then B is left of A—and vice versa.
+5   If a house A is to the right or to the left of a house B, then A is also next to B.
+6   If a house A is next to a house B, then B is also next to the A.
+7   No house is next to more than two houses.
+8   No house is next to itself.
+
+Statement 6 is stated by declaring isNextTo as a symmetric property.
+
+Statement 8 is stated by declaring isNextTo as an irreflexive property.
+
+Statement 5: isRightTo and isLeftTo are subPropertiesOf isNextTo.
+
+Statement 4: isRightTo (is the) inverseOf isLeftTo, by which it follows that isLeftTo is the inverseOf isRightTo.
+
+Statement 7: adding a cardinality restriction of max 2 isNextTo relations to the House.
+
+Statements 1 and 2: owl:distinctMembers ( :House2 :House1 :House4 :House3 :House5 ) ] .
+
+Statement 3. To ensure that our five houses may not be placed in a circle, we state that the two houses on each end of the row, House1 and House5, are not next to each other. This is done with a NegativePropertyAssertion.
+
+
+Finally, we set all the members of each class as distinct individuals. Note that we only state the members of each class as different, e.g., we need not state that Coffee is different from Blue since they are declared as members of classes which are are disjoint.
+
+Next we state the fifteen statements listed in the puzzle text. Actually we only need fourteen, The first statement, "There are five houses", is left out since it is already expressed above. All statements are marked below. They are quite straight-forward, using blank nodes when a person or a house is not identified in the statement.
+
+

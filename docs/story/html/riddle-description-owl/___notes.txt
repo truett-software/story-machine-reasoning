@@ -1,0 +1,12 @@
+
+description-OWL-einstein-riddle.html
+
+error: 
+    https://benetta.net/fonts/noto-sans/noto-sans-v11-latin-700.woff2
+
+outline-container-3 creates gutter right problem on mobile
+
+
+<meta name="author" content="Martin G. Skjæveland">
+
+

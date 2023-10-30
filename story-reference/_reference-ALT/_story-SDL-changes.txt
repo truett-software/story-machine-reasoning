@@ -1,0 +1,24 @@
+SDL
+	<amp-story-page id="item-16" data-item-label="0.1-21 Example: Schema Markup Validator Baseline">
+		update JSON-LD source
+
+	3 new validator links that match the screen shots
+		1.21
+			has CTA that opens source (change)
+			need CTA to open SMV link
+			use More (not CTA) to show source
+		1.22
+			CTA link properly runs AWS/Lambda
+			no attachment
+		1.31
+			need CTA to open SMV link
+			More properly shows source
+		1.32
+			CTA link properly runs AWS/Lambda
+			no attachment
+		1.41
+			need CTA to open SMV link
+			More properly shows source
+		1.42
+			CTA link properly runs AWS/Lambda
+			no attachment

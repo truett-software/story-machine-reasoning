@@ -1,0 +1,12 @@
+
+SDL @media
+
+@media screen and (max-width:1024px)
+@media screen and (max-width:767px) and (min-width:375px)
+
+
+WaPo @media
+@media (max-width: 350px)
+@media (min-width: 900px)
+@media (max-width: 900px)
+@media (min-width: 1024px)

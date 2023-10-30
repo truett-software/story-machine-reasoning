@@ -1,0 +1,89 @@
+
+I'll start with this because it's very important
+    what is the end goal of the presentation
+
+What is reasoning?
+
+Here a summary for a normal person:
+    https://www.braingymmer.com/en/blog/logical-reasoning/
+Our focus:
+    deductive reasoning
+
+Simple example
+If we know one fact, we can create additional information (a new fact):
+    https://n3.restdesc.org/rules/executing-rules/#executing-a-rule
+
+Here's the (very complex) Wikipedia description:
+    https://en.wikipedia.org/wiki/Deductive_reasoning
+
+Let's return to the real world and look at examples regular folks may understand.
+Here's a deductive logic reasoning engine.
+It lists several facts and then makes a statement.
+Is the statement true?
+    https://rule-reasoning.apps.allenai.org/?p=Harry%20can%20do%20magic.%20%0AMuggles%20cannot%20do%20magic.%20%0AIf%20a%20person%20can%20do%20magic%20then%20they%20can%20vanish.%20%0AMr%20Dursley%20is%20a%20Muggle.&q=Harry%20can%20vanish.%20%0AMr%20Dursley%20can%20vanish.
+
+Click submit to see answer.
+
+Deductive reasoning is also very good for finding errors.
+While this link is a bit technical, it's instructive:
+    http://ontogenesis.knowledgeblog.org/1329/
+
+I love Marx Brothers movies. They made two famous movies:
+    https://en.wikipedia.org/wiki/Duck_Soup_(1933_film)
+    https://en.wikipedia.org/wiki/Horse_Feathers
+
+Could you eat duck soup?
+Do horses have feathers?
+
+The humor is that a human instinctively knows the answer.
+
+But what about:
+    horse fly
+Can a horse fly?
+Is there a thing with the label 'horse fly'?
+
+Back to detail.
+
+We live in a (Wikipedia) Wikidata/DBpedia world - it's a major information source for our applications.
+And we share technology.
+For example, here is a DBpedia app (using SPARQL):
+    https://afdsi.com/sparql-species/#/specierch/gold
+
+Here are Wikidata reasoning use cases:
+    https://www.wikidata.org/wiki/Wikidata:WikiProject_Reasoning/Use_cases
+
+Again, Wikipedia:
+    https://en.wikipedia.org/wiki/Reasoning_system
+
+We do "Deductive classifier". To summarize Wikipedia:
+
+Deductive classifiers arose slightly later than rule-based systems and were a component of a new type of artificial intelligence knowledge representation tool known as frame languages. A frame language describes the problem domain as a set of classes, subclasses, and relations among the classes. It is similar to the object-oriented model. Unlike object-oriented models however, frame languages have a formal semantics based on first order logic.
+
+They utilize this semantics to provide input to the deductive classifier. The classifier in turn can analyze a given model (known as an ontology) and determine if the various relations described in the model are consistent. If the ontology is not consistent the classifier will highlight the declarations that are inconsistent. If the ontology is consistent the classifier can then do further reasoning and draw additional conclusions about the relations of the objects in the ontology.
+
+For example, it may determine that an object is actually a subclass or instance of additional classes as those described by the user.
+
+----------------------------
+end goal of the presentation
+----------------------------
+
+Educate readers about reasoning so they understand why reasoning is important in building a knowledge base about food, drugs, textiles, cosmetics, and chemicals.
+
+For example:
+Many times a printed label for a product contains an error (the claim is impossible). A reasoner "calls out" the error (the claim/fact is false).
+Other times a printed label contains incomplete information. With a reasoner we can add incomplete information.
+Many times a product is counterfeit. How can you identify a counterfeit product? With a reasoner.
+A woman want to know whether she will get breast cancer. How to determine? Use a reasoner (see attached image used by a reasoner).
+
+Reasoning allows us to create new information from existing information.
+Reasoning allows us to identify facts that are true and facts that are false.
+Reasoning allow us to make fact-based predictions (probability that something will happen)/
+
+=====
+
+The above doesn't contribute to creating the Einstein Riddle story
+But, hopefully, it help you understand:
+    what we do
+    how we do it
+And - most importantly:
+    how a consumer is better off using our information

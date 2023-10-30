@@ -1,0 +1,28 @@
+
+
+The Closed World Assumption (CWA) is the assumption that what is not known to be true must be false.
+The Open World Assumption (OWA) is the opposite.
+In other words, it is the assumption that what is not known to be true is simply unknown.
+
+
+https://en.wikipedia.org/wiki/Open-world_assumption
+https://en.wikipedia.org/wiki/Closed-world_assumption
+
+https://www.dataversity.net/introduction-to-open-world-assumption-vs-closed-world-assumption/
+
+The CWA applies when a system has complete information.
+This is the case for many database applications.
+For example, consider a database application for airline reservations.
+If you are looking for a direct flight between Austin and Madrid, and it doesn’t exist in the database, then the result is "There is no direct flight between Austin and Madrid."
+For this type of application, this is the expected and correct answer.
+
+On the other hand, OWA applies when a system has incomplete information.
+This is the case when we want to represent knowledge (a.k.a Ontologies) and want to discover new information.
+For example, consider a patient's clinical history system.
+If the patient's clinical history does not include a particular allergy, it would be incorrect to state that the patient does not suffer from that allergy.
+It is unknown if the patient suffers from that allergy, unless more information is given to disprove the assumption.
+
+
+https://en.wikipedia.org/wiki/Unique_name_assumption
+
+https://en.wikipedia.org/wiki/Negation_as_failure

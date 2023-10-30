@@ -1,0 +1,48 @@
+There are several ways to view the programmatic solution of the Einstein Riddle.
+
+Our solution to the Einstein Riddle is written in the Web Ontology Language, a.k.a OWL.
+
+OWL is similar to other languages designed for logic programming; languages like Prolog and Lisp.
+
+A way to understand OWL is through pictures - through the symbols used to express logic programming.
+
+Here is "OWL in Pictures" - also known as Visual OWL or VOWL.
+    Link
+
+Here is the text of the Einstein Riddle OWL ontology.
+    Link.
+
+There are many tools available for OWL programmers (many of whom are night owls).
+
+Using an OWL file as its source, one tool generates documention about the ontology.
+
+Here is the Einstein Riddle documentation.
+    Link.
+
+OWL is based on the programming language named Resource Description Framework - or RDF for short (and RDF is an extension of XML).
+
+Here is a description of RDF in 50 words or less.
+    Link.
+
+OWL, RDF and XML documents are machine-readable - meaning that a computer can act on the information in those documents.
+
+There are other machine-readable documents.
+
+One that is commonly used to describe GitHub repositories is YAML (YAML Ain't Markup Language; nee Yet Another Markup Language)
+
+Here is a YAML description of the Einstein Riddle.
+    Link
+
+As you see above, OWL and RDF were not designed to be read by humans.
+
+The human-readable solution is called RDFa which is combined with human-readable HTML.
+
+Here is the Einstein Riddle in RDFa.
+    Link.
+
+Other tools read OWL ontology files and generate a graph of the information.
+
+Here is a graph of the Einstein Riddle ontology.
+    Link
+
+One World Language - many ways to read it and apply it.

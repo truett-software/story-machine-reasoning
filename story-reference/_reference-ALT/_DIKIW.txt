@@ -1,0 +1,44 @@
+
+https://en.wikipedia.org/wiki/DIKW_pyramid
+
+https://en.wikipedia.org/wiki/Russell_L._Ackoff
+
+Russell Ackoff's knowledge pyramid
+
+Data
+Data is raw.
+It simply exists and has no significance beyond its existence (in and of itself).
+It can exist in any form, usable or not.
+It does not have the meaning of itself.
+In computer parlance, a spreadsheet generally starts out by holding data.
+
+Information
+Information is data that has been given meaning by way of relational connection.
+This "meaning" can be useful but does not have to be.
+In computer parlance, a relational database makes information from the data stored within it.
+
+Knowledge
+Knowledge is the appropriate collection of information, such that it's intent is to be useful.
+Knowledge is a deterministic process.
+When someone "memorizes" information (as less-aspiring test-bound students often do), then they have amassed knowledge.
+This knowledge has useful meaning to them, but it does not provide for, in and of itself, an integration such as would infer further knowledge.
+For example, elementary school children memorize, or amass knowledge of, the "times table".
+They can tell you that "2 x 2 = 4" because they have amassed that knowledge (it is included in the time table).
+But when asked what is "1267 x 300", they can not respond correctly because that entry is not in their times' table.
+To correctly answer such a question requires a true cognitive and analytical ability that is only encompassed in the next level ... insights.
+In computer parlance, most of the applications we use (modelling, simulation, etc.) exercise some type of stored knowledge.
+
+Insights
+Insights is an interpolative and probabilistic process.
+It is cognitive and analytical.
+It is the process by which you can take the knowledge and synthesize new knowledge from the previously held knowledge.
+The difference between understanding and knowledge is the difference between "learning" and "memorizing".
+People who have understanding can undertake useful actions because they can synthesize new knowledge, or in some cases, at least new information, from what is previously known (and understood).
+That is, understanding can build upon currently held information, knowledge and understanding itself.
+In computer parlance, AI systems possess understanding in the sense that they are able to synthesize new knowledge from previously stored information and knowledge.
+
+Wisdom
+Wisdom is an extrapolative and non-deterministic, non-probabilistic process.
+It seeks to give us understanding about which there has previously been no understanding.
+Unlike the previous four levels, it asks questions to which there often is no easily-achievable answer.
+Wisdom is the process by which we discern, or judge, between right and wrong, good and bad.
