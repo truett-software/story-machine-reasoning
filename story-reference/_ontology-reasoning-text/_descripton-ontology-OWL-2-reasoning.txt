@@ -1,0 +1,21 @@
+
+source
+https://nohr.di.fct.unl.pt/
+
+Ontologies are knowledge bases that specify classes of entities and properties that link specified classes.
+
+They can be used to describe taxonomic knowledge, such as hierarchies
+Ontologies are constructed according to Open World Assumption, meaning that only information that can be proven explicitly is derivable.
+
+OWL 2 EL a fragment of the general Web Ontology Language OWL 2.
+
+OWL 2 EL is well-suited to represent ontologies describing very large numbers of classes and properties.
+OWL 2 EL is used in biomedicine and health care, e.g., SNOMED CT, and in bioinformatics, e.g., the Gene ontology.
+
+Reasoning Rules explicitely represent inference, from premises to conclusions.
+Unlike ontology languages, reasoning rules operate under Closed World Assumption, meaning that whatever is not derivable from a set of reasoning rules is considered false (by default), but may be subject to change if further knowledge (to the contrary) is gained.
+
+TODO
+
+improve Open World Assumption
+improve Close World Assumption

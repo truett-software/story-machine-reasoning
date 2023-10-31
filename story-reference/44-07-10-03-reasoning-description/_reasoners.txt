@@ -1,0 +1,30 @@
+﻿
+http://blog.dufresneconsulting.com/2007/07/top-engine-is-here-whats-that.html?view=magazine
+
+Let me conclude this first post by listing the key features of Top Engine:
+
+Use OWL DL ontological definitions for vocabulary primitives to write rules.
+
+Provide OWL DL reasoning services to compute
+
+  satisfiability    https://en.wikipedia.org/wiki/Satisfiability
+
+  subsumption       https://en.wikipedia.org/wiki/Hierarchy#Subsumptive_containment_hierarchy
+
+  equivalence       https://en.wikipedia.org/wiki/Equivalence_relation
+
+  disjointness      https://en.wikipedia.org/wiki/Disjoint_sets
+
+of the ontology classes.
+
+This ensure that the ontology used for vocabulary primitives does not contains contradicting axioms.
+
+Generate Logic Programs rules to retain class axioms from ontology so that they can be used to infer information at run time.
+
+Ability to write rules on top of ontology with closed-world semantics.
+
+This semantics is the one used by relational databases and is familiar to developers of rule-based business applications.
+
+Reasoners that can process Ontologies and data to create new knowledge that did not exist before.
+
+For example, figuring out all the people who work for subsidiaries of a given parent company without that fact ever being explicitly tagged.

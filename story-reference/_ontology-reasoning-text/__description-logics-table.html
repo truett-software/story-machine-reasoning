@@ -1,0 +1,95 @@
+<!--
+update to use Recursive
+-->
+<!doctype html>
+<html amp lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>
+Reasoning Symbols
+</title>
+<link rel="canonical" href="index.html">
+<link rel="shortcut icon" href="https://ontomatica.io/static/image/onto_symb_w421_h421.png">
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<style amp-custom>
+
+html{box-sizing:border-box;font-size:20px;line-height:1.5;-webkit-tap-highlight-color:transparent}
+*,::after,::before{box-sizing:inherit}
+
+body{margin:0}
+body{background:#fff;color:#3b4351;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;font-size:.8rem;overflow-x:hidden;text-rendering:optimizeLegibility}
+
+.container{margin-left:auto;margin-right:auto;padding-left:.4rem;padding-right:.4rem;width:100%}
+#content{padding-top:.4rem;max-width:1200px}
+
+p{margin:0 0 1.2rem}
+
+.table{border-collapse:collapse;border-spacing:0;text-align:left;width:100%}
+.table.table-striped tbody tr:nth-of-type(odd){background:#f7f8f9}
+.table.table-hover tbody tr:hover{background:#eef0f3}
+.table.table-scroll{display:block;overflow-x:auto;padding-bottom:.75rem;white-space:nowrap}
+.table td,.table th{border-bottom:.05rem solid #dadee4;padding:.6rem .4rem}
+.table th{border-bottom-width:.1rem}
+
+.p-0{padding:0}
+.p-1{padding:.2rem}
+.p-2{padding:.4rem}
+.uline {
+    text-decoration: none;
+    position: relative;
+}
+
+.uline::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    bottom: -4px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 50%;
+    background: #e6e6e6;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.uline:hover::before {
+    width: 70%;
+    background: #1F64FF;
+}
+</style>
+</head>
+<body>
+
+<div id="content" class="container">
+<p>Description Logic Symbol Table</p>
+<table class="table table-hover">
+<thead><tr><th>Symbol</th><th></th></tr></thead>
+<tbody>
+
+
+<tr><td rowspan="2"><span style="font-size: 3em;">&#x2250;</span></td><td>approaches the limit; is nearly equal to</td></tr><tr><td><a class="uline" href="https://en.wikipedia.org/wiki/Limit_(mathematics)">Limit (mathematics)</a></td></tr>
+<tr><td rowspan="2"><span style="font-size: 3em;">&#x2229;</span></td><td>conjuction; intersection</td></tr><tr><td><a class="uline" href="https://en.wikipedia.org/wiki/Intersection">Intersection</a></td></tr>
+<tr><td rowspan="2"><span style="font-size: 3em;">&#x00AC;</span></td><td>negation</td></tr><tr><td><a class="uline" href="https://en.wikipedia.org/wiki/Negation">Negation</a></td></tr>
+<tr><td rowspan="2"><span style="font-size: 3em;">&#x222A;</span></td><td>disjunction</td></tr><tr><td><a class="uline" href="https://en.wikipedia.org/wiki/Disjoint_union">Disjoint union</a></td></tr>
+<tr><td rowspan="2"><span style="font-size: 3em;">&#x2203;</span></td><td>existential restriction; there exists</td></tr><tr><td><a class="uline" href="https://en.wikipedia.org/wiki/Existential_quantification">Existential quantification</a></td></tr>
+<tr><td rowspan="2"><span style="font-size: 3em;">&#x22A4;</span></td><td>universal concept; ("top")</td></tr><tr><td><a class="uline" href="https://en.wikipedia.org/wiki/Top_type">Top type</a></td></tr>
+<tr><td rowspan="2"><span style="font-size: 3em;">&#x2291;</span></td><td>subsumption; subset</td></tr><tr><td><a class="uline" href="https://en.wikipedia.org/wiki/Hierarchy#Subsumptive_containment_hierarchy">Hierarchy - Subsumptive containment</a></td></tr>
+<tr><td rowspan="2"><span style="font-size: 3em;">&#x22A5;</span></td><td>null concept; ("bottom")</td></tr><tr><td><a class="uline" href="https://en.wikipedia.org/wiki/Bottom_type">Bottom type</a></td></tr>
+<tr><td rowspan="2"><span style="font-size: 3em;">&#x2261;</span></td><td>equivalence</td></tr><tr><td><a class="uline" href="https://en.wikipedia.org/wiki/Equivalence_relation">Equivalence relation</a></td></tr>
+<tr><td rowspan="2"><span style="font-size: 3em;">&#x2200;</span></td><td>universal value restriction; for all; for any; for each</td></tr><tr><td><a class="uline" href="https://en.wikipedia.org/wiki/Universal_quantification">Universal quantification</a></td></tr>
+<tr><td rowspan="2"><span style="font-size: 3em;">&#x0028; &#x0029; </span></td><td>precedence grouping</td></tr><tr><td><a class="uline" href="">Precedence grouping</a></td></tr>
+<tr><td rowspan="2"><span style="font-size: 3em;">&#x2283;</span></td><td>implies; if ... then </td></tr><tr><td><a class="uline" href="https://en.wikipedia.org/wiki/Material_conditional">Material conditional</a></td></tr>
+</tbody>
+</table>
+</div>
+
+</body>
+</html>

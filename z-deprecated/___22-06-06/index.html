@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html amp lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="shortcut icon" href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg"/>
+<title>
+subset: Einstein Riddle
+</title>
+<link rel="canonical" href="http://afdsi.com/___supplier/paula-perez/story-22-04-03/index.html" />
+
+<link rel="preload" as="script"                       href="https://cdn.ampproject.org/v0.js" />
+<link rel="preload" as="script"                       href="https://cdn.ampproject.org/v0/amp-story-1.0.js" />
+
+<link rel="preload" as="font" type="font/ttf"   href="https://s3.amazonaws.com/benetta.net/fonts/recursive-woff2/Recursive-VF.ttf" crossorigin />
+<link rel="preload" as="font" type="font/woff2" href="https://s3.amazonaws.com/benetta.net/fonts/robotoflex-woff2/RobotoFlex.woff2" crossorigin />
+<link rel="preload" as="font" type="font/woff2" href="https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/zilla-slab-v6-latin-500.woff2" crossorigin />
+
+<script  async                                            src="https://cdn.ampproject.org/v0.js"></script>
+<script  async custom-element="amp-bind"                  src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+<script  async custom-element="amp-google-document-embed" src="https://cdn.ampproject.org/v0/amp-google-document-embed-0.1.js"></script>
+<script  async custom-element="amp-iframe"                src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+<script  async custom-element="amp-story"                 src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+<script  async custom-element="amp-story-interactive"     src="https://cdn.ampproject.org/v0/amp-story-interactive-0.1.js"></script>
+<script  async custom-element="amp-story-panning-media"   src="https://cdn.ampproject.org/v0/amp-story-panning-media-0.1.js"></script>
+<script  async custom-element="amp-story-shopping"        src="https://cdn.ampproject.org/v0/amp-story-shopping-0.1.js"></script>
+
+<style amp-custom="">
+
+/***************************
+*   Font: Recursive Variable
+*   Recursive-VF.ttf
+*/
+
+@font-face {
+    font-family: Recursive-2019;
+    src:url("https://s3.amazonaws.com/benetta.net/fonts/recursive-woff2/Recursive-VF.ttf") format("truetype");
+    font-display: swap;
+    text-align: initial;
+    font-weight: 100 600;
+    font-stretch: 25% 151%;
+}
+
+/*******************
+*   Font: Zilla Slab
+*/
+
+@font-face {
+    font-family: ZillaSlab;
+    src:url('https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/zilla-slab-v6-latin-500.woff2') format('woff2');
+    font-display: swap;
+    text-align: initial;
+    font-style: normal;
+    font-weight: 100 600;
+}
+
+/****************************
+*   Font: Roboto Flex Regular
+*/
+
+@font-face {
+    font-family: RobotoFlex;
+    src: url("https://s3.amazonaws.com/benetta.net/fonts/robotoflex-woff2/RobotoFlex.woff2") format("woff2");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+}
+
+/****************************
+*   Font: Noto Serif
+*/
+@font-face {
+    font-family: NotoSerif;
+    src: url("https://s3.amazonaws.com/benetta.net/fonts/noto-serif/noto-serif-v11-latin-regular.woff2") format("woff2");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/***********************
+*   Font: World of Water
+*/
+
+@font-face {
+    font-family: world-of-water;
+    src: url("https://s3.amazonaws.com/benetta.net/fonts/world-of-water/world-of-water-v2.woff2") format("woff2");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/*********************************
+*   Font: Annie Use Your Telescope
+*/
+
+@font-face {
+    font-family: AnnieUseYourTelescope;
+    src:url('https://s3.amazonaws.com/benetta.net/fonts/annie-use-telescope/AnnieUseYourTelescope.ttf') format('truetype');
+    font-display:swap;
+    font-style: normal;
+}
+
+/* used by recursive */
+:root {
+    --MONO: 0;   /* Monospace    */
+    --CASL: 0;   /* Casual       */
+    --slnt: 0;   /* Upright      */
+    --CRSV: 0.5; /* Auto Cursive */
+}
+
+*,
+*:before,
+*:after {
+    font-variation-settings: 
+        "MONO" var(--MONO),
+        "CASL" var(--CASL),
+        "slnt" var(--slnt),
+        "CRSV" var(--CRSV);
+}
+
+h1 {
+    font-family: ZillaSlab;
+    font-size: calc(3.125 * var(--story-page-vw));
+    font-weight: 100;
+    color: #440044; /* set to background SVG color */
+    border: none;
+}
+
+h2 {
+    font-family: ZillaSlab;
+    font-size: calc(4 * var(--story-page-vw));
+    font-weight: 100;
+    display: inline-block;
+    color: #ffffff;
+    border: none;
+}
+
+/* re-calibrate font-size for question and solution headers */
+.h2-q1 {
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1em;
+    border: none;
+    background-color: #808080;
+    opacity: 0.7;
+    padding: 2px 18px 2px 18px;
+}
+.h2-q2 {
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1em;
+    border: none;
+    background-color: #808080;
+    opacity: 0.7;
+    padding: 6px 18px 6px 18px;
+}
+.h2-q3 {
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1em;
+    border: none;
+    background-color: #808080;
+    opacity: 0.7;
+    padding: 6px 18px 6px 18px;
+}
+
+.h2-s1 {
+    display: inline-block;
+    font-size: 0.9em;
+    font-weight: 400;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    opacity: 0.5;
+    padding: 0px 30px 15px 30px;
+}
+.h2-s2 {
+    display: inline-block;
+    font-weight: 400;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    opacity: 0.5;
+    padding: 0px 30px 15px 30px;
+}
+.h2-s3 {
+    display: inline-block;
+    font-weight: 400;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    opacity: 0.5;
+    padding: 0px 30px 15px 30px;
+}
+
+.h2-components {
+    display: inline-block;
+    font-size: 0.8em;
+    border: none;
+    color: #ffffff;
+}
+.h2-rid-set {
+    display: inline-block;
+    font-size: 0.9em;
+    border: none;
+    color: #ffffff;
+}
+
+/*
+    font-family: Amstelvar-Roman;
+    font-family: ZillaSlab;
+*/
+
+h3 {
+    font-family: ZillaSlab;
+    font-size: calc(2.6 * var(--story-page-vw));
+    font-weight: 300;
+    line-height: 1.2em;
+    color: #ffffff;
+    border: none;
+}
+
+h4 {
+    font-family: Recursive-2019;
+    font-size: calc(2 * var(--story-page-vw));
+    font-weight: 300;
+    --CASL: 1;
+    --slnt: 0;
+    --MONO: 0;
+    font-feature-settings: "ss01" on, "ss02" on, "ss08" on;
+    margin-top: 1em;
+    color: #ffffff;
+    border: none;
+    transition: 1s;
+}
+
+h4:hover {
+    font-weight: 800;
+    --CRSV: 0;
+    transition: 1s;
+}
+
+h5 {
+    font-family: Recursive-2019;
+    font-size: calc(2 * var(--story-page-vw));
+    font-weight: 300;
+    --CASL: 1;
+    --slnt: 0;
+    --MONO: 0;
+    font-feature-settings: "ss01" on, "ss02" on, "ss08" on;
+    margin-bottom: 0.8em;
+    color: #ffffff;
+    border: none;
+    transition: 1s;
+}
+
+h5:hover {
+    font-weight: 800;
+    --CRSV: 0;
+    transition: 1s;
+}
+
+li {
+    font-family: Recursive-2019;
+    font-size: calc(1.2 * var(--story-page-vw));
+    font-weight: 300;
+    font-feature-settings: "ss01" on, "ss02" on, "ss08" on;
+    margin-bottom: 0.6em;
+    --CASL: 1;
+    --slnt: 0;
+    --MONO: 0;
+    color: #ffffff;
+    border: none;
+    transition: 1s;
+}
+
+li:hover {
+    font-weight: 800;
+    --CRSV: 0;
+    transition: 1s;
+}
+
+.symbol {
+    font-size: 2em;
+    line-height: 0.5em;
+}
+
+/****************
+*   SDL additions
+*/
+
+.title-centered {
+    text-align: center;
+}
+
+.uline {
+    text-decoration: none;
+    position: relative;
+}
+
+.uline::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    bottom: -4px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 50%;
+    background: #e6e6e6;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.uline:hover::before {
+    width: 70%;
+    background: #1f64ff;
+}
+
+.opacity3 {
+    opacity: 0.3;
+}
+.opacity6 {
+    opacity: 0.6;
+}
+.opacity9 {
+    opacity: 0.3;
+}
+
+
+/**********************
+*   Attachment DL-DT-DD
+*/
+
+/* test switch to em */
+.chartlegend span {
+    display: inline-block;
+    height: 0.65rem;
+    width: 0.65rem;
+    border-radius: 0.25rem;
+}
+
+.av {
+    font-family: NotoSerif;
+    font-size: 1.4em;
+    font-weight: 400;
+    color: #130f30;
+    border: none;
+}
+
+p {
+    font-family: NotoSerif;
+    font-size: 1.1em;
+    font-weight: 400;
+    /* line-height: 1.6rem; */
+    line-height: 1.6em;
+    color: #000;
+    border: none;
+}
+
+dt {
+    font-family: NotoSerif;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 2em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin-left: 1em;
+    color: #130f30;
+    border: none;
+}
+
+dd {
+    font-family: NotoSerif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.4em;
+    margin-left: 2em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    border: none;
+}
+
+.li {
+    font-family: NotoSerif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.4em;
+    text-indent: 0em;
+    margin-left: 4em;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.mr-s {
+    margin-right: 1em;
+}
+
+.p-s {
+    padding-left: 1em;
+}
+
+/* source: https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/ */
+
+blockquote {
+    font-family: NotoSerif;
+    line-height: 1.4em;
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+/* end attachment */
+
+/************************
+*   from sequence 10 - 58
+*   E:_rosetta-unified-data-table+color.xlsx
+*   E:_color-palette__2.xlsx
+*/
+
+.c-c0334d {
+    background-color: #c0334d;
+}
+.c-f3d480 {
+    background-color: #f3d480;
+}
+.c-f1931b {
+    background-color: #f1931b;
+}
+.c-8f715b {
+    background-color: #8f715b;
+}
+.c-78d68c {
+    background-color: #78d68c;
+}
+.c-720017 {
+    background-color: #720017;
+}
+.c-d8d583 {
+    background-color: #d8d583;
+}
+.c-d98c2a {
+    background-color: #d98c2a;
+}
+.c-36688d {
+    background-color: #36688d;
+}
+.c-a3586d {
+    background-color: #a3586d;
+}
+.c-aba6bf {
+    background-color: #aba6bf;
+}
+.c-595775 {
+    background-color: #595775;
+}
+.c-84a45a {
+    background-color: #84a45a;
+}
+.c-583e2e {
+    background-color: #583e2e;
+}
+.c-bf988f {
+    background-color: #bf988f;
+}
+.c-a7414a {
+    background-color: #a7414a;
+}
+.c-6a8a82 {
+    background-color: #6a8a82;
+}
+.c-a37c27 {
+    background-color: #a37c27;
+}
+.c-4fd993 {
+    background-color: #4fd993;
+}
+.c-704404 {
+    background-color: #704404;
+}
+.c-4e7ba7 {
+    background-color: #4e7ba7;
+}
+.c-d28f1b {
+    background-color: #d28f1b;
+}
+.c-1ecfd6 {
+    background-color: #1ecfd6;
+}
+.c-edd179 {
+    background-color: #edd179;
+}
+.c-c05640 {
+    background-color: #c05640;
+}
+.c-728ca3 {
+    background-color: #728ca3;
+}
+.c-73c0f4 {
+    background-color: #73c0f4;
+}
+.c-f3e46c {
+    background-color: #f3e46c;
+}
+.c-582a20 {
+    background-color: #582a20;
+}
+.c-9499a6 {
+    background-color: #9499a6;
+}
+.c-c59cdb {
+    background-color: #c59cdb;
+}
+.c-a67b04 {
+    background-color: #a67b04;
+}
+.c-525b56 {
+    background-color: #525b56;
+}
+.c-93a806 {
+    background-color: #93a806;
+}
+.c-f08b33 {
+    background-color: #f08b33;
+}
+.c-d75404 {
+    background-color: #d75404;
+}
+.c-8a2c02 {
+    background-color: #8a2c02;
+}
+.c-d75b66 {
+    background-color: #d75b66;
+}
+.c-23345c {
+    background-color: #23345c;
+}
+.c-bfafa0 {
+    background-color: #bfafa0;
+}
+.c-515b51 {
+    background-color: #515b51;
+}
+.c-8c7547 {
+    background-color: #8c7547;
+}
+.c-efa747 {
+    background-color: #efa747;
+}
+.c-52733b {
+    background-color: #52733b;
+}
+.c-bda728 {
+    background-color: #bda728;
+}
+.c-704307 {
+    background-color: #704307;
+}
+.c-f7b178 {
+    background-color: #f7b178;
+}
+.c-253f5b {
+    background-color: #253f5b;
+}
+.c-4f728e {
+    background-color: #4f728e;
+}
+
+
+/************************************************************
+*   grid-layer template=vertical position=landscape-half-left
+*/
+
+.half-left {
+    padding-top: 270px;
+}
+.half-right {
+    padding-top: 270px;
+}
+
+/**************************
+*   amp-story-panning-media
+*/
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 0.95);
+    text-align: center;
+    position: relative;
+    top: 50vh;
+}
+
+.main-heading {
+    color: white;
+    font-family: RobotoFlex, sans-serif;
+    text-align: center;
+    font-size: calc(4 * var(--story-page-vw));
+    font-variation-settings: "wdth" 50, "opsz" 14, "GRAD" 10, "slnt" -10;
+    font-weight: 700;
+    line-height: 1.1em;
+    display: inline-block;
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+}
+
+#protege-setup,
+#reasoner-active,
+#question-drinks-water,
+#answer-drinks-water,
+#question-owns-zebra,
+#answer-owns-zebra {
+    background-color: #151515;
+}
+
+.vignette {
+    background: radial-gradient(
+        120% 50% at 50% 35%,
+        rgb(0 0 0 / 0) 25.5%,
+        rgb(0 0 0 / 0.96) 100%
+    );
+}
+
+.btn {
+    font-family: RobotoFlex;
+    font-style: italic;
+    font-size: 1em;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 27px;
+    border: 1px solid rgb(255 255 255 / 0.25);
+    padding: 10px 20px;
+    margin: 0 auto;
+    margin-top: 16px;
+}
+.btn:after {
+    content: "";
+    background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" fill="red" viewBox="0 0 24 24"><path style="fill: white; stroke: white" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path></svg>');
+    margin-left: 10px;
+    width: 18px;
+    height: 18px;
+}
+#protege-setup .btn,
+#back-cover .btn {
+    margin-top: 46px;
+}
+#protege-setup .btn:before {
+    content: "Start";
+}
+.btn:before {
+    content: "Next";
+}
+#question-drinks-water .btn:before {
+    content: "Tap to find out";
+}
+#question-owns-zebra .btn:before {
+    content: "Tap to find out";
+}
+#answer-owns-zebra .btn:before {
+    content: "Learn more";
+}
+
+/**********
+*   spacers
+*/
+
+.space-1 {
+    margin-bottom: 1em;
+}
+.space-2 {
+    margin-bottom: 2em;
+}
+
+/*********
+*   @media
+*/
+
+/* iPhone SE Portrait */@media only screen and (min-width:375px) and (orientation:portrait){h2{font-size:calc(8.5 * var(--story-page-vw));}.h2-q1{font-size:1.4em;line-height:1.2em;padding:2px 18px 2px 18px;}.h2-q2{font-size:2.0em;line-height:0.8em;padding:6px 18px 12px 18px;}.h2-q3{font-size:1.6em;line-height:1.0em;padding:6px 18px 6px 18px;}h3{font-size:calc(5.5 * var(--story-page-vw));margin-top:1em;}h4{font-size:calc(6.0 * var(--story-page-vw));}li{font-size:calc(3.0 * var(--story-page-vw));}.half-left{margin-top:-62px;}.half-right{padding-top:372px;}.darken{filter:brightness(0.6) blur(8px);}#logo-onto{width:260%;height:260%;}}
+
+/* iPhone 12 Portrait */@media only screen and (min-width:390px) and (orientation:portrait){li{font-size:calc(3.3 * var(--story-page-vw));}.half-left{margin-top:-50px;}.half-right{padding-top:420px;}.darken{filter:brightness(0.6) blur(8px);}}
+
+/* iPhone SE Landscape */@media only screen and (min-width:667px) and (orientation:landscape){h2{font-size:calc(3.6 * var(--story-page-vw));line-height:0.9em;}.h2-q1{font-size:0.5em;line-height:1.2em;padding:2px 18px 2px 18px;}.h2-q2{font-size:0.6em;line-height:1.4em;padding:0px 18px 0px 18px;}.h2-q3{font-size:0.6em;line-height:1.6em;padding:0px 18px 0px 18px;}h3{font-size:calc(3.0 * var(--story-page-vw));}h4{font-size:calc(2.1 * var(--story-page-vw));}li{font-size:calc(1.6 * var(--story-page-vw));}.half-left{margin-top:-160px;}.half-right{margin-top:-160px;}#logo-onto{width:180%;height:180%;}}
+
+/* iPad Mini Portrait */@media only screen and (min-width:768px) and (orientation:portrait){h2{font-size:calc(8.0 * var(--story-page-vw));line-height:1.0em;}.h2-q2{font-size:1.4em;line-height:1.0em;padding:0px 18px 12px 18px;}.h2-q3{font-size:1.4em;line-height:1.0em;padding:0px 18px 12px 18px;}h3{font-size:calc(5.0 * var(--story-page-vw));margin-top:1em;}h4{font-size:calc(5.8 * var(--story-page-vw));}li{font-size:calc(2.4 * var(--story-page-vw));}.half-left{padding-top:400px;}.half-right{padding-top:585px;}.darken{filter:brightness(0.6) blur(8px);}}
+
+/* PERFECT */
+/* iPad MINE Portrait 810 */
+/* iPad Air Portrait */
+@media only screen and (min-width:810px) and (orientation:portrait)
+{
+h2{font-size:calc(7.0 * var(--story-page-vw));}
+h3{font-size:calc(4.0 * var(--story-page-vw));margin-top:1em;}
+h4{font-size:calc(5.0 * var(--story-page-vw));line-height:1em;}
+li{font-size:calc(2.6 * var(--story-page-vw));}
+.half-left{margin-top:-120px;}
+.half-right{padding-top:560px;}
+.darken{filter:brightness(0.6) blur(8px);}
+}
+
+/* iPhone 12 Landscape */@media only screen and (min-width:844px) and (orientation:landscape){li{font-size:calc(1.4 * var(--story-page-vw));}.half-left{margin-top:-160px;}.half-right{padding-top:270px;}#diagram-netflix,#diagram-reasoner,#diagram-ide-title-no{width:90%;}#quiz-1{margin-top:5rem;}#quiz-2{margin-top:5rem;}}
+
+/* PERFECT */
+/* my iPad Landscape 1080 */
+@media only screen and (min-width:1080px) and (orientation:landscape)
+{
+h2{font-size:calc(6.0 * var(--story-page-vw));}
+.h2-q1{font-size:1.0em;line-height:1.0em;padding:2px 18px 2px 18px;}.h2-q2{font-size:1.0em;line-height:1.4em;padding:0px 18px 0px 18px;}.h2-q3{font-size:1.0em;line-height:1.0em;padding:0px 18px 12px 18px;}
+h3{font-size:calc(4.0 * var(--story-page-vw));margin-top:1em;}
+h4{font-size:calc(3.0 * var(--story-page-vw));line-height:1em;}
+li{font-size:calc(1.8 * var(--story-page-vw));}
+.half-left{margin-top:10px;}
+.half-right{padding-top:440px;}
+#how-to-know{width:100%;height:100%;}
+#diagram-netflix{width:100%;height:100%;}
+#diagram-ide-title-no{width:100%;height:100%;}
+#diagram-ontology{width:100%;height:100%;}
+#diagram-reasoner{width:100%;height:100%;}
+}
+
+/* iPad Air Landscape */@media only screen and (min-width:1180px) and (orientation:landscape){h2{font-size:calc(5.2 * var(--story-page-vw));}h3{font-size:calc(4.0 * var(--story-page-vw));margin-top:1em;}h4{font-size:calc(3.0 * var(--story-page-vw));}li{font-size:calc(2.0 * var(--story-page-vw));}.half-left{margin-top:0px;}.half-right{padding-top:430px;}#how-to-know{width:100%;height:100%;}#diagram-netflix{width:100%;height:100%;}}
+
+/* desktop Landscape */@media only screen and (min-width:1190px) and (orientation:landscape){h2{font-size:calc(4.2 * var(--story-page-vw));line-height:1.0em;}h3{font-size:calc(3.2 * var(--story-page-vw));line-height:1.0em;}h4{font-size:calc(2.5 * var(--story-page-vw));}li{font-size:calc(1.8 * var(--story-page-vw));}.half-left{margin-top:-66px;}.half-right{padding-top:365px;}#how-to-know{width:90%;height:150%;}#diagram-netflix{width:90%;height:90%;}#ontology{width:100%;height:120%;}}
+
+</style>
+
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+</head>
+<body>
+  <amp-story
+    standalone
+    supports-landscape
+    title=""
+    publisher="Ontomatica"
+    publisher-logo-src="https://example.com/logo/1x1.png"
+    poster-portrait-src="https://example.com/poster/3x4.jpg"
+  >
+    <amp-story-page id="item-13" data-item-label="how-to-know">
+      <amp-story-grid-layer template="fill"
+        ><amp-img
+          id=""
+          data-item-role="background"
+          data-item-type="static"
+          data-item-label="background-440044-constellation"
+          src="https://afdsi.com/___supplier/paula-perez/reference/background-440044-constellation-w997-h997.svg"
+          width="997"
+          height="997"
+          layout="responsive"
+        ></amp-img
+      ></amp-story-grid-layer>
+      <amp-story-grid-layer template="vertical" position="landscape-half-left">
+        <div
+          class="darken"
+          animate-in="fade-in"
+          animate-in-duration="4s"
+          animate-in-delay="0.5s"
+        >
+          <svg
+            id="diagram-drug-interaction"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1479 643"
+            xml:space="preserve"
+          ></svg>
+        </div>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="vertical" position="landscape-half-right">
+        <div animate-in="fade-in" animate-in-duration="4s">
+          <h2>How to know &#x2026;</h2>
+        </div>
+        <div
+          animate-in="fade-in"
+          animate-in-duration="4s"
+          animate-in-delay="0.5s"
+        >
+          <h4>Will my food conflict with my medicine&#x003F;</h4>
+          <h4>
+            Will I like the flavor of a combination of specific foods and
+            beverages&#x003F;
+          </h4>
+          <h4>
+            How do I find information about a product that doesn&#x0027;t fit on
+            its label&#x003F;
+          </h4>
+        </div>
+      </amp-story-grid-layer>
+
+      <amp-story-page-attachment
+        layout="nodisplay"
+        theme="custom"
+        cta-image="https://afdsi.com/___supplier/paula-perez/reference/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg"
+        cta-text="&#x201C;How to know &#x2026;&#x201D;"
+        data-title="More about &#x201C;How to know &#x2026;&#x201D;"
+      >
+        <section class="p-s">
+          <dl class="chartlegend">
+            <div class="av">
+              Have you ever wondered whether the drugs you consume daily, such
+              as blood pressure medications and antihistamines, interact with
+              one another&#x003F;
+            </div>
+            <dt></dt>
+            <dd>
+              <span class="c-c0334d mr-s"></span>Drug, supplement or food affect
+              how medication stays in the body, often by stimulating or
+              inhibiting the production of specific enzymes in the liver or
+              intestine.
+            </dd>
+            <dd>
+              <span class="c-f3d480 mr-s"></span>Enzymes play an important role
+              in metabolizing drugs and interactions can make a drug more
+              powerful, whereby a standard dose can become an overdose or it can
+              be rendered less potent or ineffective.
+            </dd>
+            <dd>
+              <span class="c-f1931b mr-s"></span>Several foods can also block or
+              stimulate the enzymes that break down drugs.
+            </dd>
+            <dd>
+              <span class="c-8f715b mr-s"></span>The human body also breaks down
+              drugs differently.
+            </dd>
+            <div class="av">
+              How to organize information so we can determine whether chemical
+              interactions (drugs, supplements, flavors) are what we want
+              &#x2014; or what we don&#x0027;t want&#x003F;
+            </div>
+            <dt></dt>
+            <dd>
+              <span class="c-78d68c mr-s"></span>In this graph, biomedical
+              concepts such as drugs, diseases, and side effects are represented
+              as entities, while the edges in the graph denote their respective
+              relationships.
+            </dd>
+            <dd>
+              <span class="c-720017 mr-s"></span>For example, an edge between
+              two drug entities might indicate a potential
+              drug&#x2013;to&#x2013;drug interaction, while an edge between a
+              drug and a disease entity might describe a treatment.
+            </dd>
+            <amp-img
+              id=""
+              data-item-role="attachment"
+              data-item-type="static"
+              data-item-label="drug-drug-interaction"
+              src="https://afdsi.com/___supplier/paula-perez/reference/drug-drug-interaction-w1200-h769.jpg"
+              width="1200"
+              height="769"
+              layout="responsive"
+              srcset="https://afdsi.com/___supplier/paula-perez/reference/drug-drug-interaction-w200.jpg 200w,https://afdsi.com/___supplier/paula-perez/reference/drug-drug-interaction-w693.jpg 693w,https://afdsi.com/___supplier/paula-perez/reference/drug-drug-interaction-w1200.jpg 1200w"
+            ></amp-img>
+            <div class="av">
+              We organize data into similar graphs to &#x201C;connect the
+              dots&#x201D;.
+            </div>
+          </dl>
+        </section>
+        <hr />
+        <hr />
+      </amp-story-page-attachment>
+    </amp-story-page>
+
+    <amp-story-page id="item-16" data-item-label="einstein-riddle">
+      <amp-story-grid-layer template="fill"
+        ><amp-img
+          id=""
+          data-item-role="background"
+          data-item-type="static"
+          data-item-label="background-130F30-constellation"
+          src="https://afdsi.com/___supplier/paula-perez/reference/background-130F30-constellation-w997-h997.svg"
+          width="997"
+          height="997"
+          layout="responsive"
+        ></amp-img
+      ></amp-story-grid-layer>
+      <amp-story-grid-layer template="thirds" aspect-ratio="4:3">
+        <div grid-area="upper-third">
+          <div
+            class="title-centered"
+            animate-in="fade-in"
+            animate-in-duration="4s"
+          >
+            <h2>Einstein&#x2019;s Riddle</h2>
+          </div>
+          <div
+            class="title-centered"
+            animate-in="fade-in"
+            animate-in-duration="4s"
+            animate-in-delay="1s"
+          >
+            <h4>
+              We&#x0027;re going to show you how to use machine logic to solve a
+              famous riddle. The riddle focuses on deductive reasoning where
+              facts are used to come to a logical conclusion.
+            </h4>
+            <h4>
+              If all the facts are true and all the rules of deductive logic are
+              followed, then the conclusion will also be true.
+            </h4>
+          </div>
+        </div>
+      </amp-story-grid-layer>
+      <amp-story-page-outlink
+        layout="nodisplay"
+        theme="custom"
+        cta-accent-color="#1F64FF"
+        cta-accent-element="text"
+        cta-image="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Wikipedia_Logo_1.0.png/240px-Wikipedia_Logo_1.0.png"
+        ><a href="https://en.wikipedia.org/wiki/Deductive_reasoning"
+          >Deductive reasoning</a
+        ></amp-story-page-outlink
+      >
+    </amp-story-page>
+
+    <amp-story-page id="item-17" data-item-label="riddle-setup">
+      <amp-story-grid-layer template="fill"
+        ><amp-img
+          id=""
+          data-item-role="background"
+          data-item-type="static"
+          data-item-label="background-440044-constellation"
+          src="https://afdsi.com/___supplier/paula-perez/reference/background-440044-constellation-w997-h997.svg"
+          width="997"
+          height="997"
+          layout="responsive"
+        ></amp-img
+      ></amp-story-grid-layer>
+      <amp-story-grid-layer template="thirds" aspect-ratio="16:9">
+        <div grid-area="upper-third">
+          <div
+            class="title-centered"
+            animate-in="fade-in"
+            animate-in-duration="4s"
+          >
+            <h2>
+              Einstein&#x2019;s riddle is a logic puzzle that gives sentences
+              relating objects to each other
+            </h2>
+          </div>
+          <div
+            class="title-centered"
+            animate-in="fade-in"
+            animate-in-duration="4s"
+            animate-in-delay="2s"
+          >
+            <h4>There are five houses.</h4>
+          </div>
+        </div>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="vertical" position="landscape-half-left">
+        <div
+          class="half-left"
+          animate-in="fade-in"
+          animate-in-duration="4s"
+          animate-in-delay="3s"
+        >
+          <ul>
+            <li>The Englishman lives in the red house.</li>
+            <li>The Spaniard owns the dog.</li>
+            <li>Coffee is drunk in the green house.</li>
+            <li>The Ukrainian drinks tea.</li>
+            <li>
+              The green house is immediately to the right of the ivory house.
+            </li>
+            <li>The Old Gold smoker owns snails.</li>
+            <li>Kools are smoked in the yellow house.</li>
+          </ul>
+        </div>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="vertical" position="landscape-half-right">
+        <div
+          class="half-right"
+          animate-in="fade-in"
+          animate-in-duration="4s"
+          animate-in-delay="5s"
+        >
+          <ul>
+            <li>Milk is drunk in the middle house.</li>
+            <li>The Norwegian lives in the first house.</li>
+            <li>
+              The man who smokes Chesterfields lives in the house next to the
+              man with the fox.
+            </li>
+            <li>
+              Kools are smoked in the house next to the house where the horse is
+              kept.
+            </li>
+            <li>The Lucky Strike smoker drinks orange juice.</li>
+            <li>The Japanese smokes Parliaments.</li>
+            <li>The Norwegian lives next to the blue house.</li>
+          </ul>
+        </div>
+      </amp-story-grid-layer>
+    </amp-story-page>
+
+    <amp-story-page id="item-18" data-item-label="riddle-questions">
+      <amp-story-grid-layer template="fill"
+        ><amp-img
+          id=""
+          data-item-role="background"
+          data-item-type="static"
+          data-item-label="background-130F30-constellation"
+          src="https://afdsi.com/___supplier/paula-perez/reference/background-130F30-constellation-w997-h997.svg"
+          width="997"
+          height="997"
+          layout="responsive"
+        ></amp-img
+      ></amp-story-grid-layer>
+
+      <amp-story-grid-layer template="thirds" aspect-ratio="4:3">
+        <div grid-area="upper-third">
+          <div
+            class="title-centered"
+            animate-in="fade-in"
+            animate-in-duration="4s"
+          >
+            <h2>The Questions</h2>
+          </div>
+          <div
+            class="title-centered"
+            animate-in="fade-in"
+            animate-in-duration="4s"
+            animate-in-delay="1s"
+          >
+            <h3>
+              At the end are two questions about how certain objects relate to
+              each other.
+            </h3>
+          </div>
+          <div
+            class="title-centered"
+            animate-in="fade-in"
+            animate-in-duration="4s"
+            animate-in-delay="2s"
+          >
+            <h4>Who drinks water&#x003F;</h4>
+            <h4>Who owns the zebra&#x003F;</h4>
+          </div>
+          <div
+            class="title-centered"
+            animate-in="fade-in"
+            animate-in-duration="4s"
+            animate-in-delay="5s"
+          >
+            <h2>Can you solve the Riddle&#x003F;</h2>
+          </div>
+        </div>
+      </amp-story-grid-layer>
+
+      <amp-story-page-attachment
+        layout="nodisplay"
+        theme="custom"
+        cta-image="https://afdsi.com/___supplier/paula-perez/reference/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg"
+        cta-text="Manual solution"
+        data-title="Manual solution to the Einstein Riddle"
+      >
+        <section class="p-s">
+          <dl class="chartlegend">
+            <div class="av"></div>
+            <dt>OK, you want to solve this riddle by yourself&#x0021;</dt>
+            <dd>
+              <span class="c-c0334d mr-s"></span>Here is one approach that will
+              help you get started.
+            </dd>
+          </dl>
+          <amp-google-document-embed
+            width="1"
+            height="1"
+            layout="responsive"
+            src="https://afdsi.com/___supplier/paula-perez/reference/einstein-riddle-manual-solution.pdf"
+          ></amp-google-document-embed>
+        </section>
+      </amp-story-page-attachment>
+    </amp-story-page>
+
+    <amp-story-page id="item-23" data-item-label="steps-to-solve-riddle">
+      <amp-story-grid-layer template="fill"
+        ><amp-img
+          id=""
+          data-item-role="background"
+          data-item-type="static"
+          data-item-label="background-440044-constellation"
+          src="https://afdsi.com/___supplier/paula-perez/reference/background-440044-constellation-w997-h997.svg"
+          width="997"
+          height="997"
+          layout="responsive"
+        ></amp-img
+      ></amp-story-grid-layer>
+      <amp-story-grid-layer template="thirds" aspect-ratio="4:3">
+        <div grid-area="upper-third">
+          <div
+            class="title-centered"
+            animate-in="fade-in"
+            animate-in-duration="4s"
+          >
+            <h2>How do we program a solution&#x003F;</h2>
+          </div>
+          <div
+            class="title-centered"
+            animate-in="fade-in"
+            animate-in-duration="4s"
+            animate-in-delay="1s"
+          >
+            <h4>
+              Organize classes (categories such as nationalities or pets) to
+              make sure they are unique.
+            </h4>
+            <h4>
+              Assign the correct class to a relationship (which person has which
+              pet).
+            </h4>
+            <h4>
+              Protect against unexpected outcomes such as the houses are placed
+              in a circle.
+            </h4>
+          </div>
+        </div>
+      </amp-story-grid-layer>
+      <amp-story-page-outlink
+        layout="nodisplay"
+        theme="custom"
+        cta-accent-color="#1F64FF"
+        cta-accent-element="text"
+        cta-image="https://afdsi.com/___supplier/paula-perez/reference/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg"
+        ><a
+          href="https://afdsi.com/___supplier/paula-perez/reference/riddle-description-owl.html"
+          >More about Programming</a
+        ></amp-story-page-outlink
+      >
+    </amp-story-page>
+
+    <amp-story-page id="item-27" data-item-label="protege-setup">
+      <amp-story-grid-layer template="fill">
+        <amp-story-panning-media data-y="-45%" data-zoom=".45" layout="fill">
+          <amp-img
+            id=""
+            data-item-role=""
+            data-item-type="animated"
+            data-item-label="setup-protege"
+            animate-in="fade-in"
+            animate-in-duration="4s"
+            src="https://afdsi.com/___supplier/paula-perez/reference/setup-norwegian-w1680-h973.png"
+            width="1680"
+            height="973"
+            layout="fill"
+            srcset="https://afdsi.com/___supplier/paula-perez/reference/setup-norwegian-w200.png 200w,https://afdsi.com/___supplier/paula-perez/reference/setup-norwegian-w664.png 664w,https://afdsi.com/___supplier/paula-perez/reference/setup-norwegian-w998.png 998w,https://afdsi.com/___supplier/paula-perez/reference/setup-norwegian-w1400.png 1400w"
+          ></amp-img>
+        </amp-story-panning-media>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="fill">
+        <div animate-in="fade-in" animate-in-duration="4s">
+          <div class="content-wrapper">
+            <span class="sub-heading"></span>
+            <span class="main-heading"
+              >Now let&#x0027;s look at how
+              &#x0050;&#x0072;&#x006F;&#x0074;&#x00E9;&#x0067;&#x00E9;&#x000A;
+              solves the riddle</span
+            >
+            <span></span>
+            <div class="btn"></div>
+          </div>
+        </div>
+      </amp-story-grid-layer>
+    </amp-story-page>
+
+    <amp-story-page id="item-28" data-item-label="reasoner-active">
+      <amp-story-grid-layer template="fill">
+        <amp-story-panning-media
+          data-x="-30%"
+          data-y="-55%"
+          data-zoom="1.15"
+          layout="fill"
+        >
+          <amp-img
+            id=""
+            data-item-role=""
+            data-item-type="static"
+            data-item-label="setup-protege"
+            src="https://afdsi.com/___supplier/paula-perez/reference/setup-norwegian-w1680-h973.png"
+            width="1680"
+            height="973"
+            layout="fill"
+            srcset="https://afdsi.com/___supplier/paula-perez/reference/setup-norwegian-w200.png 200w,https://afdsi.com/___supplier/paula-perez/reference/setup-norwegian-w664.png 664w,https://afdsi.com/___supplier/paula-perez/reference/setup-norwegian-w998.png 998w,https://afdsi.com/___supplier/paula-perez/reference/setup-norwegian-w1400.png 1400w"
+          ></amp-img>
+        </amp-story-panning-media>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="fill">
+        <div class="vignette" animate-in="scale-fade-down"></div>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="fill">
+        <div animate-in="fade-in" animate-in-duration="4s">
+          <div class="content-wrapper">
+            <span class="sub-heading"></span>
+            <span class="main-heading">The Reasoner is active</span>
+            <span></span>
+            <div class="btn"></div>
+          </div>
+        </div>
+      </amp-story-grid-layer>
+    </amp-story-page>
+
+    <amp-story-page id="item-33" data-item-label="other applications">
+      <amp-story-grid-layer template="fill"
+        ><amp-img
+          id=""
+          data-item-role="background"
+          data-item-type="static"
+          data-item-label="background-130F30-constellation"
+          src="https://afdsi.com/___supplier/paula-perez/reference/background-130F30-constellation-w997-h997.svg"
+          width="997"
+          height="997"
+          layout="responsive"
+        ></amp-img
+      ></amp-story-grid-layer>
+      <amp-story-grid-layer template="thirds" aspect-ratio="6:4">
+        <div grid-area="upper-third">
+          <div
+            class="title-centered"
+            animate-in="fade-in"
+            animate-in-duration="4s"
+          >
+            <h2>Other Applications</h2>
+          </div>
+        </div>
+        <div grid-area="middle-third">
+          <div
+            class="title-centered"
+            animate-in="fade-in"
+            animate-in-duration="4s"
+            animate-in-delay="1s"
+          >
+            <h3>
+              Ontologies also have a wide variety of uses, from helping you
+              chose your next Netflix movie, to more scientific applications
+              like learning about cosmic relationships or helping doctors
+              diagnose disease.
+            </h3>
+          </div>
+        </div>
+      </amp-story-grid-layer>
+
+      <amp-story-page-attachment
+        layout="nodisplay"
+        theme="custom"
+        cta-image="https://afdsi.com/___supplier/paula-perez/reference/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg"
+        cta-text="Similar solutions"
+        data-title="Other problems that find solutions based on the Einstein Riddle solution"
+      >
+        <section class="p-s">
+          <dl class="chartlegend">
+            <div class="av">
+              A challenge common to many construction projects&#x003A;
+            </div>
+            <dt></dt>
+            <dd>
+              <span class="c-c0334d mr-s"></span>determine the optimal
+              allocation of construction machines for different projects, or in
+              the same project but at different locations.
+            </dd>
+            <div class="av">
+              In the example below, the challenge is to allocate three loaders
+              and three trucks on three different construction sites.
+            </div>
+            <dd>
+              <span class="c-f3d480 mr-s"></span>The optimization objective is
+              to minimize the total hourly expenses of the assigned machines and
+              to maximize the loaders&#x2019; utilization.
+            </dd>
+            <dd>
+              <span class="c-f1931b mr-s"></span>Even in relatively
+              small&#x2013;scale problems the number of feasible combinations
+              and parameters exceeds human imagination and experience.
+            </dd>
+            <div class="av">
+              This paper uses the Constraint Satisfaction Problem (CSP)
+              properties of the Einstein Riddle to solve a combinatorial
+              optimization tasks in the field of construction.
+            </div>
+          </dl>
+          <amp-google-document-embed
+            width="1"
+            height="1"
+            layout="responsive"
+            src="https://afdsi.com/___supplier/paula-perez/reference/solving-construction-machine-allocation-problems.pdf"
+          ></amp-google-document-embed>
+        </section>
+      </amp-story-page-attachment>
+    </amp-story-page>
+  </amp-story>
+</body>
+
+</html>

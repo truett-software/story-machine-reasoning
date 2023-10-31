@@ -1,0 +1,826 @@
+<!--
+amp-valid
+-->
+<!DOCTYPE html>
+<html amp lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width"/>
+<link rel="shortcut icon" href="https://ontomatica.io/static/image/onto_symb_w421_h421.png">
+<title>
+Einstein Puzzle
+</title>
+<link rel="canonical" href="http://example.ampproject.org/my-story.html"/>
+<script  async                                          src="https://cdn.ampproject.org/v0.js"></script>
+<script  async custom-element="amp-story"               src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+<!-- <script  async custom-element="amp-story-interactive"   src="https://cdn.ampproject.org/v0/amp-story-interactive-0.1.js"></script> -->
+<script  async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet"> 
+
+<!-- font-family: 'Annie Use Your Telescope', cursive; -->
+
+<style amp-custom="">
+
+/**
+  *  Recursive Variable Font
+  *  recheck - URL looks wrong for 2019
+  */
+
+@font-face {
+    font-family: Recursive-2019;
+    text-align: initial;
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+    font-display:swap;
+    src:url("https://s3.amazonaws.com/benetta.net/fonts/recursive-woff2/Recursive-VF.ttf") format("truetype");
+}
+
+:root {
+    /* Start with axis defaults. Exclude weight, which is better controlled via the usual font-weight CSS property */
+    --MONO: 0;   /* Monospace    */
+    --CASL: 0;   /* Casual       */
+    --slnt: 0;   /* Upright      */
+    --CRSV: 0.5; /* Auto Cursive */
+}
+
+*,
+*:before,
+*:after {
+    font-variation-settings: 
+        "MONO" var(--MONO),
+        "CASL" var(--CASL),
+        "slnt" var(--slnt),
+        "CRSV" var(--CRSV);
+}
+
+h3 {
+    font-family: Recursive-2019;
+    font-size: 2em;
+    font-weight: 300;
+    --CASL: 1;
+    --slnt: 0;
+    --MONO: 0;
+    margin-bottom: 0.8em;
+    color: #ffffff;
+    border: none;
+    transition: 1s;
+}
+
+h3:hover {
+    font-weight: 800;
+    --CRSV: 0;
+    transition: 1s;
+}
+
+/**
+  *  Amstelvar Alpha Variable Font
+  */
+
+@font-face {
+    font-family: AmstelvarAlpha-VF;
+    src: url("https://s3.amazonaws.com/benetta.net/fonts/amstelvar-woff2/AmstelvarAlpha-VF.woff2") format("woff2-variations");
+    font-style: normal;
+    font-weight: 300 900;
+    font-stretch: 35% 100%;
+    font-display: swap;
+    unicode-range: U+0020-007E, U+4E00, U+4E2A, U+4E45, U+4EE5, U+524D,
+        U+5728, U+5927, U+5F81, U+5F88, U+6211, U+661F, U+662F, U+6D77,
+        U+7684, U+7CFB, U+8FB0, U+8FDC, U+9014, U+9065;
+}
+
+h1 {
+    font-family: AmstelvarAlpha-VF;
+    font-size: 1.6em;
+    font-weight: 400;
+    color: #130F30; /* same color as background SVG */
+    border: none;
+}
+
+h2 {
+    font-family: AmstelvarAlpha-VF;
+    font-size: 4em;
+    font-weight: 300;
+    color: #ffffff;
+    border: none;
+}
+
+/**
+  * Truett baseline
+  */
+
+.centered {
+    text-align: center;
+    position: relative;
+    left: 50%;
+    margin-top: 150px;
+    background-color: gray;
+    transform: translate(-50%, -50%);
+}
+
+.cover {
+    text-align: center;
+    top: 80%;
+    position: relative;
+    color: #d92121;
+}
+
+/**
+  * SDL additions
+  */
+
+.title-centered {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.opacity2 {
+    opacity: 0.6;
+}
+.opacity3 {
+    opacity: 0.3;
+}
+
+.buttonwrap {
+    text-align: center;
+}
+.button {
+    display: inline-block;
+    background-color: #ffca03;
+    border-radius: 5px 5px 5px 5px;
+    font-weight: 700;
+    padding: 1%;
+}
+
+/**
+  * Cover Slide
+  */
+
+.bg-b {
+    background-color: #000;
+}
+
+.bg-w {
+    background-color: #fff;
+}
+
+.bt {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.c-bottom {
+    align-content: end;
+}
+
+.color-p {
+    color: #ff0000;
+}
+
+.color-s {
+    color: #6c757d;
+}
+
+.cover-f {
+    width: 90%;
+}
+
+.d-flex {
+    display: flex;
+    display: -ms-flexbox;
+}
+
+.flex-fill {
+    flex: 1 1 auto;
+}
+
+.mb {
+    margin-bottom: 1rem;
+}
+
+.ml-s {
+    margin-left: 0.5rem;
+}
+
+/* dup */
+.mr-s {
+    margin-right: 0.5rem;
+}
+
+.mx-a {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.noedge {
+    padding: 0;
+}
+
+.p {
+    padding: 1rem;
+}
+
+/* dup */
+.p-s {
+    padding: 0.5rem;
+}
+
+.paper {
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+        0 1.5px 0.5px -1px rgba(0, 0, 0, 0.2), 0 0 2.5px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+        0 1.5px 0.5px -1px rgba(0, 0, 0, 0.2), 0 0 2.5px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+        0 1.5px 0.5px -1px rgba(0, 0, 0, 0.2), 0 0 2.5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.pb {
+    padding-bottom: 1rem;
+}
+
+.pt {
+    padding-top: 1rem;
+}
+
+.sep-v {
+    border-left: 24px solid #ff0000;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-fatty {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+/**
+  * Provenance
+  * DL-DT-DD conflicts with Attachment
+  */
+
+.g-flexed {
+    display: flex;
+    flex-flow: row wrap;
+    border: solid #333;
+    border-width: 1px 1px 0 0;
+}
+
+.g-dl {
+    display: flex;
+    flex-flow: row wrap;
+    border: solid #333;
+    border-width: 1px 1px 0 0;
+}
+
+.g-dt {
+    flex-basis: 30%;
+    padding: 2px 4px;
+    text-align: right;
+    color: #fff;
+}
+
+.g-dd {
+    flex-basis: 70%;
+    flex-grow: 1;
+    margin: 0;
+    padding: 2px 4px;
+    border-bottom: 1px solid #333;
+    color: #fff;
+}
+
+.prov__text ul {
+    font-weight: 100;
+    margin: 16px auto;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.show-yes {
+    visibility: visible;
+}
+
+.show-no {
+    display: none;
+}
+
+.show-hide {
+    visibility: hidden;
+}
+
+/**
+  * Attachment tab selectors
+  */
+
+.tabs {
+    width: 710px;
+    height: 25em;
+    float: none;
+    list-style: none;
+    position: relative;
+    text-align: left;
+}
+
+.tabs li {
+    float: left;
+    display: block;
+}
+
+.tabs input[type="radio"] {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+}
+
+.tabs label {
+    display: block;
+    padding: 14px 21px;
+    border-radius: 2px 2px 0 0;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    background: #8e44ad;
+    cursor: pointer;
+    position: relative;
+    top: 4px;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.tabs label:hover {
+    background: #703688;
+}
+
+.tabs .tab-content {
+    z-index: 2;
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    font-size: 17px;
+    line-height: 25px;
+    padding: 25px;
+    position: absolute;
+    top: 53px;
+    left: 0;
+    background: #612e76;
+}
+
+.tabs [id^="tab"]:checked + label {
+    top: 0;
+    padding-top: 17px;
+    background: #612e76;
+}
+
+.tabs [id^="tab"]:checked ~ [id^="tab-content"] {
+    display: block;
+}
+
+p.link {
+    clear: both;
+    margin: 380px 0 0 15px;
+}
+
+p.link a {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: #612e76;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+p.link a:hover {
+    background-color: #522764;
+}
+
+/* end tab selector */
+
+
+/**
+  * Story interactive
+  */
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 22em;
+    font-size: 0.23em;
+}
+
+#quiz-1 {
+    /* --interactive-prompt-text-color: rgb(112, 238, 96); */
+    /* font-family: Recursive-2019; */
+    --interactive-prompt-text-color: red;
+    --interactive-accent-color: green;
+}
+
+#quiz-2 {
+    /* --interactive-accent-color: rgb(9, 63, 4); */
+    --interactive-prompt-text-color: red;
+}
+
+#quiz-3 {
+    /* --interactive-prompt-background: linear-gradient(120deg, dodgerblue, blue); */
+    --interactive-prompt-text-color: red;
+}
+
+#results-1 {
+    --interactive-prompt-text-color: white;
+    --interactive-accent-color: rgb(5, 99, 221);
+}
+
+#poll-1 {
+    --interactive-prompt-text-color: rgb(230, 110, 19);
+}
+
+#poll-2 {
+    --interactive-accent-color: rgb(9, 63, 4);
+}
+
+#poll-3 {
+    --interactive-prompt-background: linear-gradient(120deg, dodgerblue, blue);
+}
+/* end Story interactive */
+
+
+/**
+  * Attachment DL-DT-DD
+  * conflicts with Provenance
+  */
+
+/* Recursive Variable Font */
+dd {
+    font-family: Recursive-2019;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 2em;
+    margin-left: 3em;
+    --CASL: 1;
+    --slnt: 0;
+    --MONO: 0;
+    border: none;
+    transition: 1s;
+}
+
+dd:hover {
+    font-weight: 800;
+    --CRSV: 0;
+    transition: 1s;
+}
+
+/* Amstelvar Alpha Variable Font */
+dt {
+    font-family: AmstelvarAlpha-VF;
+    font-size: 1.4em;
+    font-weight: 400;
+    line-height: 2em;
+    margin-left: 1em;
+    color: #130F30; /* same color as background SVG */
+    border: none;
+}
+
+.av {
+    font-family: AmstelvarAlpha-VF;
+    font-size: 1.6em;
+    font-weight: 400;
+    color: #130F30; /* same color as background SVG */
+    border: none;
+}
+
+.chartlegend span {
+    display: inline-block;
+    height: 0.65rem;
+    width: 0.65rem;
+    border-radius: 0.25rem;
+}
+
+/* dup */
+.mr-s {
+    margin-right: 1rem;
+}
+
+/* dup */
+.p-s {
+    padding-left: 1rem;
+}
+
+/** 
+  *  from sequence 10 - 58
+  *  E:\content\______collections\collection_rosetta-data\___workbooks-rosetta\_rosetta-unified-data-table+color.xlsx
+  *  E:\content\________migration\____one-place\_color\_color-palette-sequence\_color-palette__2.xlsx
+  */
+
+.c-c0334d {
+    background-color: #c0334d;
+}
+.c-f3d480 {
+    background-color: #f3d480;
+}
+.c-f1931b {
+    background-color: #f1931b;
+}
+.c-8f715b {
+    background-color: #8f715b;
+}
+.c-78d68c {
+    background-color: #78d68c;
+}
+.c-720017 {
+    background-color: #720017;
+}
+.c-d8d583 {
+    background-color: #d8d583;
+}
+.c-d98c2a {
+    background-color: #d98c2a;
+}
+.c-36688d {
+    background-color: #36688d;
+}
+.c-a3586d {
+    background-color: #a3586d;
+}
+.c-aba6bf {
+    background-color: #aba6bf;
+}
+.c-595775 {
+    background-color: #595775;
+}
+.c-84a45a {
+    background-color: #84a45a;
+}
+.c-583e2e {
+    background-color: #583e2e;
+}
+.c-bf988f {
+    background-color: #bf988f;
+}
+.c-a7414a {
+    background-color: #a7414a;
+}
+.c-6a8a82 {
+    background-color: #6a8a82;
+}
+.c-a37c27 {
+    background-color: #a37c27;
+}
+.c-4fd993 {
+    background-color: #4fd993;
+}
+.c-704404 {
+    background-color: #704404;
+}
+.c-4e7ba7 {
+    background-color: #4e7ba7;
+}
+.c-d28f1b {
+    background-color: #d28f1b;
+}
+.c-1ecfd6 {
+    background-color: #1ecfd6;
+}
+.c-edd179 {
+    background-color: #edd179;
+}
+.c-c05640 {
+    background-color: #c05640;
+}
+.c-728ca3 {
+    background-color: #728ca3;
+}
+.c-73c0f4 {
+    background-color: #73c0f4;
+}
+.c-f3e46c {
+    background-color: #f3e46c;
+}
+.c-582a20 {
+    background-color: #582a20;
+}
+.c-9499a6 {
+    background-color: #9499a6;
+}
+.c-c59cdb {
+    background-color: #c59cdb;
+}
+.c-a67b04 {
+    background-color: #a67b04;
+}
+.c-525b56 {
+    background-color: #525b56;
+}
+.c-93a806 {
+    background-color: #93a806;
+}
+.c-f08b33 {
+    background-color: #f08b33;
+}
+.c-d75404 {
+    background-color: #d75404;
+}
+.c-8a2c02 {
+    background-color: #8a2c02;
+}
+.c-d75b66 {
+    background-color: #d75b66;
+}
+.c-23345c {
+    background-color: #23345c;
+}
+.c-bfafa0 {
+    background-color: #bfafa0;
+}
+.c-515b51 {
+    background-color: #515b51;
+}
+.c-8c7547 {
+    background-color: #8c7547;
+}
+.c-efa747 {
+    background-color: #efa747;
+}
+.c-52733b {
+    background-color: #52733b;
+}
+.c-bda728 {
+    background-color: #bda728;
+}
+.c-704307 {
+    background-color: #704307;
+}
+.c-f7b178 {
+    background-color: #f7b178;
+}
+.c-253f5b {
+    background-color: #253f5b;
+}
+.c-4f728e {
+    background-color: #4f728e;
+}
+
+/**
+  * additions: font directives; darken
+  */
+
+@media screen and (max-width: 375px) {
+    .centered {
+        font-size: 15px;
+    }
+    .cover {
+        margin-top: 100px;
+        font-size: 15px;
+    }
+    amp-img {
+        opacity: 0.4;
+    }
+    .darken {
+            filter:brightness(0.6) blur(8px)
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 570px) {
+    .centered {
+        font-size: 15px;
+    }
+    .cover {
+        margin-top: 100px;
+        font-size: 20px;
+    }
+    amp-img {
+        opacity: 0.4;
+    }
+    .darken {
+            filter:brightness(0.6) blur(8px)
+    }
+}
+
+@media screen and (min-width: 570px) and (max-width: 750px) {
+    .centered {
+        font-size: 15px;
+    }
+    .cover {
+        margin-top: 100px;
+        font-size: 25px;
+    }
+    amp-img {
+        opacity: 0.4;
+    }
+}
+
+@media screen and (min-width: 751px) and (max-width: 767px) {
+    .centered {
+        font-size: 20px;
+    }
+    .cover {
+        margin-top: 100px;
+        font-size: 20px;
+    }
+    amp-img {
+        opacity: 0.4;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .centered {
+        font-size: 25px;
+        padding-top: 40px;
+    }
+    .cover {
+        margin-top: 100px;
+        font-size: 25px;
+    }
+    amp-img {
+        opacity: 0.4;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .centered {
+        font-size: 30px;
+    }
+    .cover {
+        margin-top: 100px;
+        font-size: 3em;
+    }
+}
+
+.row{
+  display: flex;
+  height: inherit;
+}
+
+[class^="col-"]{
+  height: inherit;
+}
+
+</style>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+</head>
+<body>
+
+<amp-story
+    standalone
+    supports-landscape
+    title="Truett Story"
+    publisher="Truett"
+    publisher-logo-src="https://example.com/logo/1x1.png"
+    poster-portrait-src="https://example.com/my-story/poster/3x4.jpg"
+>
+
+<amp-story-page id="11" data-item-label="Title Page"><amp-story-grid-layer template="fill"><amp-img src="neural-network-130f30-w400-h371.svg" layout="responsive" width="400" height="371"></amp-img></amp-story-grid-layer><amp-story-grid-layer class="noedge c-bottom mb" template="vertical"><section class="paper color-s bg-w cover-f" animate-in="fly-in-left" animate-in-duration="0.5s" animate-in-delay="0.5s"><div class="d-flex"><div class="flex-fill pt pb"><hgroup class="ml-s"><div><span class="text-fatty color-p"><span style="font-family: Recursive-2019;">&#x0063;&#x006F;&#x006E;&#x006E;&#x0065;&#x0063;&#x0074;&#x0069;&#x006E;&#x0067;&#x0020;&#x0074;&#x0068;&#x0065;&#x0020;&#x0064;&#x006F;&#x0074;&#x0073;</span></span></div><h1><span class="">&#x0053;&#x006F;&#x006C;&#x0076;&#x0065;&#x0020;&#x0050;&#x0072;&#x006F;&#x0062;&#x006C;&#x0065;&#x006D;&#x0073;&#x0020;&#x0077;&#x0069;&#x0074;&#x0068;&#x0020;&#x004D;&#x0061;&#x0063;&#x0068;&#x0069;&#x006E;&#x0065;&#x0020;&#x0052;&#x0065;&#x0061;&#x0073;&#x006F;&#x006E;&#x0069;&#x006E;&#x0067;</span></h1></hgroup><div class="w-50 mx-a" animate-in="fade-in" animate-in-duration="0.5s" animate-in-delay="1.8s"><p><span class="text-fatty pb"><span style="font-family: Recursive-2019;">&#x0062;&#x0079;&#x0020;&#x0050;&#x0061;&#x0075;&#x006C;&#x0061;&#x0020;&#x0050;&#x0065;&#x0072;&#x0065;&#x007A;</span></span></p></div></div><div class="sep-v" animate-in="fly-in-bottom" animate-in-duration="0.5s" animate-in-delay="1s"></div></div></div></section></amp-story-grid-layer></amp-story-page>
+
+<amp-story-page id="1" data-item-label="ontologies">
+<amp-story-grid-layer template="fill">
+<amp-img src="background-130F30-constellation-w997-h997.svg" layout="responsive" width="997" height="997"></amp-img>
+</amp-story-grid-layer>
+<amp-story-grid-layer template="vertical" position="landscape-half-left">
+<div class="darken" animate-in="fade-in" animate-in-duration="4s"animate-in-delay="1s">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 437 326" style="background-color: #fff"><defs><marker viewBox="0 0 5 5" markerWidth="5" markerHeight="5" orient="auto" refX="5" refY="2.5" id="markerArrowBlock"><path d="M 0 0 L 5 2.5 L 0 5 z"></path></marker><marker viewBox="0 0 9.6 16" markerWidth="4" markerHeight="16" orient="auto" refX="9.6" refY="8" id="markerArrowOpen"><path d="M 9.6,8 1.92,16 0,13.7 5.76,8 0,2.286 1.92,0 9.6,8 z"></path></marker></defs><g class="title"><path d="M10,10C73.1,4.9 63.2,15.1 137.5,10.0C136.4,28.8 138.6,16.5 137.5,37.2C39.9,32.1 44.0,42.3 10.0,37.2C11.1,24.1 8.9,17.8 10.0,10.0" style="stroke-width: 2px;" stroke="#000000" fill="#ffffff"></path><text x="15" y="28.81666660308838" style="font-size: 16px; font-family: danielbd;"><tspan x="15">Here is a title</tspan></text></g><g class="actor"><path d="M10,47.21666717529297C19.7,48.5 31.8,45.9 43.1,47.2C41.6,53.3 44.6,73.7 43.1,85.0C22.4,86.3 37.8,83.7 10.0,85.0C8.5,64.4 11.5,71.5 10.0,47.2" style="stroke-width: 2px;" stroke="#000000" fill="#ffffff"></path><text x="20" y="71.60000038146973" style="font-size: 16px; font-family: danielbd;"><tspan x="20">A</tspan></text></g><g class="actor"><path d="M10,268.8000011444092C37.0,270.1 15.3,267.5 43.1,268.8C41.6,274.8 44.6,280.9 43.1,306.6C35.1,307.9 31.7,305.3 10.0,306.6C8.5,277.9 11.5,297.5 10.0,268.8" style="stroke-width: 2px;" stroke="#000000" fill="#ffffff"></path><text x="20" y="293.18333435058594" style="font-size: 16px; font-family: danielbd;"><tspan x="20">A</tspan></text></g><path d="M26.5,85.0C33.9,140.4 19.2,133.2 26.5,268.8" style="stroke-width: 2px;" stroke="#000000" fill="none"></path><g class="actor"><path d="M124.55000162124634,47.21666717529297C148.0,48.7 136.8,45.8 160.8,47.2C162.3,79.0 159.3,67.2 160.8,85.0C155.0,86.4 148.7,83.6 124.6,85.0C126.1,79.0 123.0,75.9 124.6,47.2" style="stroke-width: 2px;" stroke="#000000" fill="#ffffff"></path><text x="134.55000162124634" y="71.44999980926514" style="font-size: 16px; font-family: danielbd;"><tspan x="134.55000162124634">B</tspan></text></g><g class="actor"><path d="M124.55000162124634,268.8000011444092C142.7,267.4 130.3,270.2 160.8,268.8C162.3,300.5 159.3,278.1 160.8,306.6C145.7,308.0 138.5,305.1 124.6,306.6C123.0,289.3 126.1,288.3 124.6,268.8" style="stroke-width: 2px;" stroke="#000000" fill="#ffffff"></path><text x="134.55000162124634" y="293.03333377838135" style="font-size: 16px; font-family: danielbd;"><tspan x="134.55000162124634">B</tspan></text></g><path d="M142.7,85.0C135.3,193.7 150.0,224.7 142.7,268.8" style="stroke-width: 2px;" stroke="#000000" fill="none"></path><g class="actor"><path d="M242.3416714668274,47.21666717529297C251.2,45.7 267.5,48.7 279.1,47.2C277.6,68.6 280.6,70.2 279.1,85.0C251.2,83.5 264.6,86.5 242.3,85.0C240.8,75.9 243.9,74.4 242.3,47.2" style="stroke-width: 2px;" stroke="#000000" fill="#ffffff"></path><text x="252.3416714668274" y="70.92500019073486" style="font-size: 16px; font-family: danielbd;"><tspan x="252.3416714668274">C</tspan></text></g><g class="actor"><path d="M242.3416714668274,268.8000011444092C273.2,267.3 255.5,270.3 279.1,268.8C280.6,297.5 277.6,287.5 279.1,306.6C268.4,308.1 270.3,305.1 242.3,306.6C240.8,297.5 243.9,296.1 242.3,268.8" style="stroke-width: 2px;" stroke="#000000" fill="#ffffff"></path><text x="252.3416714668274" y="292.5083341598511" style="font-size: 16px; font-family: danielbd;"><tspan x="252.3416714668274">C</tspan></text></g><path d="M260.7,85.0C253.4,239.4 268.1,130.3 260.7,268.8" style="stroke-width: 2px;" stroke="#000000" fill="none"></path><g class="actor"><path d="M369.63334035873413,47.21666717529297C398.4,48.7 401.0,45.7 407.5,47.2C405.9,74.5 409.0,59.7 407.5,85.0C391.2,83.5 400.6,86.5 369.6,85.0C368.1,74.4 371.1,75.6 369.6,47.2" style="stroke-width: 2px;" stroke="#000000" fill="#ffffff"></path><text x="379.63334035873413" y="70.92500019073486" style="font-size: 16px; font-family: danielbd;"><tspan x="379.63334035873413">D</tspan></text></g><g class="actor"><path d="M369.63334035873413,268.8000011444092C378.6,267.3 397.1,270.3 407.5,268.8C409.0,289.9 405.9,274.8 407.5,306.6C401.4,308.1 390.5,305.1 369.6,306.6C368.1,290.2 371.1,281.1 369.6,268.8" style="stroke-width: 2px;" stroke="#000000" fill="#ffffff"></path><text x="379.63334035873413" y="292.5083341598511" style="font-size: 16px; font-family: danielbd;"><tspan x="379.63334035873413">D</tspan></text></g><path d="M388.5,85.0C381.2,239.4 395.9,224.7 388.5,268.8" style="stroke-width: 2px;" stroke="#000000" fill="none"></path><g class="signal"><text x="36.54166650772095" y="115.2083330154419" style="font-size: 16px; font-family: danielbd;"><tspan x="36.54166650772095">Normal line</tspan></text><path d="M26.5,122.2C65.2,117.6 102.0,126.9 142.7,122.2" style="stroke-width: 2px; marker-end: url("#markerArrowBlock");" stroke="#000000" fill="none"></path></g><g class="signal"><text x="152.65833520889282" y="152.75833415985107" style="font-size: 16px; font-family: danielbd;"><tspan x="152.65833520889282">Dashed line</tspan></text><path d="M142.7,160.1C172.4,155.4 198.6,164.8 260.7,160.1" style="stroke-width: 2px; stroke-dasharray: 6px, 2px; marker-end: url("#markerArrowBlock");" stroke="#000000" fill="none"></path></g><g class="signal"><text x="270.70833826065063" y="186.32499980926514" style="font-size: 16px; font-family: danielbd;"><tspan x="270.70833826065063">Open arrow</tspan></text><path d="M260.7,203.7C357.9,198.6 337.1,208.8 388.5,203.7" style="stroke-width: 2px; marker-end: url("#markerArrowOpen");" stroke="#000000" fill="none"></path></g><g class="signal"><text x="120.73333597183228" y="230.65833377838135" style="font-size: 16px; font-family: danielbd;"><tspan x="120.73333597183228">Dashed open arrow</tspan></text><path d="M388.5,248.8C84.5,234.3 113.4,263.3 26.5,248.8" style="stroke-width: 2px; stroke-dasharray: 6px, 2px; marker-end: url("#markerArrowOpen");" stroke="#000000" fill="none"></path></g></svg>
+</div>
+</amp-story-grid-layer>
+<amp-story-grid-layer template="vertical" position="landscape-half-right">
+<div class="" animate-in="fade-in" animate-in-duration="4s">
+<h2><span class="">Ontology</span></h2>
+</div>
+<div class="" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="4s">
+<h3><span class="">Ontologies are detailed descriptions of something. For your purposes, think of an architect blueprint.</span></h3>
+<h3><span class="">In the puzzle we gave at the beginning, the nationality (English, Spaniard, Ukranian) is a classified as a property of a person, where as the position (first, middle, etc. ) is associated with the house.</span></h3>
+<h3><span class="">Computers are able to create relationships between the different classes to determine which person lives in which house.</span></h3>
+</div>
+</amp-story-grid-layer>
+<amp-story-page-attachment layout="nodisplay" data-cta-text="More about ontologies" data-title="There was something cathartic about wielding a crowbar.">
+<section class="p-s"><dl class="chartlegend"><div class="av">Abbervail Dream</div><dt>Blue Diamonds</dt><dd><span class="c-c0334d mr-s"></span>Bright amazing and wonderful</dd><dd><span class="c-f3d480 mr-s"></span>Dancing around the flames</dd><dd><span class="c-f1931b mr-s"></span>Everybody knows bird is word</dd><div class="av">Caramel Sensation</div><dt>Dairy Cream</dt><dd><span class="c-8f715b mr-s"></span>Frosty the snowman is a boss</dd><dd><span class="c-78d68c mr-s"></span>Girls just want to have fun</dd><dd><span class="c-720017 mr-s"></span>Got some popsicles in the cellar</dd><div class="av">Elusive Enchantment</div><dt>Fat Chance Cinnamon</dt><dd><span class="c-d8d583 mr-s"></span>Insomnia gives me time to</dd><dd><span class="c-d98c2a mr-s"></span>Inspiration slaps me in the face</dd><dd><span class="c-36688d mr-s"></span>Last chance for one last dance</dd><div class="av">Good Luck Charm</div><dt>Hershey's Kiss</dt><dd><span class="c-a3586d mr-s"></span>Laugh all day for no reason</dd><dd><span class="c-aba6bf mr-s"></span>Life is a box of chocolates</dd><dd><span class="c-595775 mr-s"></span>Live like there is no tomorrow</dd><div class="av">Ice Cream Mix</div><dt>Jack Daniels</dt><dd><span class="c-84a45a mr-s"></span>Make it up as you go</dd><dd><span class="c-583e2e mr-s"></span>Moms cookies make everything</dd><dd><span class="c-bf988f mr-s"></span>My room is an organized mess</dd><div class="av">Kitty Hawk</div><dt>Last Man Standing</dt><dd><span class="c-a7414a mr-s"></span>Pluto is still a planet</dd><dd><span class="c-6a8a82 mr-s"></span>Six words can mean the world</dd><dd><span class="c-a37c27 mr-s"></span>Sleeping with a giant bear</dd><div class="av">Made You Look</div><dt>Nabisco Cracker</dt><dd><span class="c-4fd993 mr-s"></span>Sour candy makes me twitch</dd><dd><span class="c-704404 mr-s"></span>The sky is not the limit</dd><dd><span class="c-4e7ba7 mr-s"></span>There always gonna be another</dd><div class="av">One in a Million</div><dt>Peach Blossom</dt><dd><span class="c-d28f1b mr-s"></span>There no place like grandmas</dd><dd><span class="c-1ecfd6 mr-s"></span>Why whisper what you shout</dd><dd><span class="c-edd179 mr-s"></span>Your the apple to my pie</dd></dl></section><hr>
+</amp-story-page-attachment>
+</amp-story-page>
+
+</amp-story>
+</body>
+</html>

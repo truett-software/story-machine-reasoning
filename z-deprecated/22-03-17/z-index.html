@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html amp lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width"/>
+<title>
+Truett Web Story
+</title>
+<link rel="canonical" href="http://example.ampproject.org/my-story.html"/>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+<script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+<!-- not valid for amp-story, but use it anyway -->
+<script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+
+<style amp-custom="">
+
+@font-face {
+    font-family:Recursive-2019;
+    text-align: initial;
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+    font-display:swap;
+    src:url("https://s3.amazonaws.com/benetta.net/fonts/recursive-woff2/Recursive-VF.ttf") format("truetype");
+}
+
+@font-face {
+    font-family:Amstelvar-VF;
+    font-style: normal;
+    font-weight: 300 900;
+    font-stretch: 35% 100%;
+    font-display: swap;
+    src:url('https://s3.amazonaws.com/benetta.net/fonts/amstelvar-woff2/Amstelvar-Roman-VF.woff2') format('woff2-variations');
+}
+
+:root {
+  --recursive-b025-aalt: "aalt" off;
+  --recursive-b025-case: "case" off;
+  --recursive-b025-dlig: "dlig" off;
+  --recursive-b025-dnom: "dnom" off;
+  --recursive-b025-frac: "frac" off;
+  --recursive-b025-numr: "numr" off;
+  --recursive-b025-ordn: "ordn" off;
+  --recursive-b025-pnum: "pnum" off;
+  --recursive-b025-sinf: "sinf" off;
+  --recursive-b025-ss01: "ss01" off;
+  --recursive-b025-ss02: "ss02" off;
+  --recursive-b025-ss03: "ss03" off;
+  --recursive-b025-ss04: "ss04" off;
+  --recursive-b025-ss05: "ss05" off;
+  --recursive-b025-ss06: "ss06" off;
+  --recursive-b025-ss07: "ss07" off;
+  --recursive-b025-ss08: "ss08" off;
+  --recursive-b025-ss09: "ss09" off;
+  --recursive-b025-ss10: "ss10" off;
+  --recursive-b025-ss11: "ss11" off;
+  --recursive-b025-ss20: "ss20" off;
+  --recursive-b025-sups: "sups" off;
+  --recursive-b025-titl: "titl" off;
+  --recursive-b025-zero: "zero" off;
+  --base-font-size: 1rem;
+  --sans-font-stack: Recursive, Arial, Helvetica, sans-serif;
+  --mono-font-stack: Recursive, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+/* If class is applied, update custom property and apply modern font-variant-* when supported */
+.recursive-b025-aalt {
+  --recursive-b025-aalt: "aalt" on;
+}
+
+.recursive-b025-case {
+  --recursive-b025-case: "case" on;
+}
+
+.recursive-b025-dlig {
+  --recursive-b025-dlig: "dlig" on;
+}
+
+@supports (font-variant-ligatures: discretionary-ligatures) {
+  .recursive-b025-dlig {
+      --recursive-b025-dlig: "____";
+      font-variant-ligatures: discretionary-ligatures;
+  }
+}
+
+.recursive-b025-dnom {
+  --recursive-b025-dnom: "dnom" on;
+}
+
+.recursive-b025-frac {
+  --recursive-b025-frac: "frac" on;
+}
+
+@supports (font-variant-numeric: diagonal-fractions) {
+  .recursive-b025-frac {
+      --recursive-b025-frac: "____";
+      font-variant-numeric: diagonal-fractions;
+  }
+}
+
+.recursive-b025-numr {
+  --recursive-b025-numr: "numr" on;
+}
+
+.recursive-b025-ordn {
+  --recursive-b025-ordn: "ordn" on;
+}
+
+@supports (font-variant-numeric: ordinal) {
+  .recursive-b025-ordn {
+      --recursive-b025-ordn: "____";
+      font-variant-numeric: ordinal;
+  }
+}
+
+.recursive-b025-pnum {
+  --recursive-b025-pnum: "pnum" on;
+}
+
+@supports (font-variant-numeric: proportional-nums) {
+  .recursive-b025-pnum {
+      --recursive-b025-pnum: "____";
+      font-variant-numeric: proportional-nums;
+  }
+}
+
+.recursive-b025-sinf {
+  --recursive-b025-sinf: "sinf" on;
+}
+
+.recursive-b025-ss01 {
+  --recursive-b025-ss01: "ss01" on;
+}
+
+.recursive-b025-ss02 {
+  --recursive-b025-ss02: "ss02" on;
+}
+
+.recursive-b025-ss03 {
+  --recursive-b025-ss03: "ss03" on;
+}
+
+.recursive-b025-ss04 {
+  --recursive-b025-ss04: "ss04" on;
+}
+
+.recursive-b025-ss05 {
+  --recursive-b025-ss05: "ss05" on;
+}
+
+.recursive-b025-ss06 {
+  --recursive-b025-ss06: "ss06" on;
+}
+
+.recursive-b025-ss07 {
+  --recursive-b025-ss07: "ss07" on;
+}
+
+.recursive-b025-ss08 {
+  --recursive-b025-ss08: "ss08" on;
+}
+
+.recursive-b025-ss09 {
+  --recursive-b025-ss09: "ss09" on;
+}
+
+.recursive-b025-ss10 {
+  --recursive-b025-ss10: "ss10" on;
+}
+
+.recursive-b025-ss11 {
+  --recursive-b025-ss11: "ss11" on;
+}
+
+.recursive-b025-ss20 {
+  --recursive-b025-ss20: "ss20" on;
+}
+
+.recursive-b025-sups {
+  --recursive-b025-sups: "sups" on;
+}
+
+@supports (font-variant-position: super) {
+  .recursive-b025-sups {
+      --recursive-b025-sups: "____";
+      font-variant-position: super;
+  }
+}
+
+.recursive-b025-titl {
+  --recursive-b025-titl: "titl" on;
+}
+
+@supports (font-variant-caps: titling-caps) {
+  .recursive-b025-titl {
+      --recursive-b025-titl: "____";
+      font-variant-caps: titling-caps;
+  }
+}
+
+.recursive-b025-zero {
+  --recursive-b025-zero: "zero" on;
+}
+
+@supports (font-variant-numeric: slashed-zero) {
+  .recursive-b025-zero {
+      --recursive-b025-zero: "____";
+      font-variant-numeric: slashed-zero;
+  }
+}
+
+/* Apply current state of all custom properties whenever a class is being applied */
+.recursive-b025-aalt,
+.recursive-b025-case,
+.recursive-b025-dlig,
+.recursive-b025-dnom,
+.recursive-b025-frac,
+.recursive-b025-numr,
+.recursive-b025-ordn,
+.recursive-b025-pnum,
+.recursive-b025-sinf,
+.recursive-b025-ss01,
+.recursive-b025-ss02,
+.recursive-b025-ss03,
+.recursive-b025-ss04,
+.recursive-b025-ss05,
+.recursive-b025-ss06,
+.recursive-b025-ss07,
+.recursive-b025-ss08,
+.recursive-b025-ss09,
+.recursive-b025-ss10,
+.recursive-b025-ss11,
+.recursive-b025-ss20,
+.recursive-b025-sups,
+.recursive-b025-titl,
+.recursive-b025-zero {
+  font-feature-settings: var(--recursive-b025-aalt), var(--recursive-b025-case), var(--recursive-b025-dlig), var(--recursive-b025-dnom), var(--recursive-b025-frac), var(--recursive-b025-numr), var(--recursive-b025-ordn), var(--recursive-b025-pnum), var(--recursive-b025-sinf), var(--recursive-b025-ss01), var(--recursive-b025-ss02), var(--recursive-b025-ss03), var(--recursive-b025-ss04), var(--recursive-b025-ss05), var(--recursive-b025-ss06), var(--recursive-b025-ss07), var(--recursive-b025-ss08), var(--recursive-b025-ss09), var(--recursive-b025-ss10), var(--recursive-b025-ss11), var(--recursive-b025-ss20), var(--recursive-b025-sups), var(--recursive-b025-titl), var(--recursive-b025-zero);
+}
+
+/* Variable instances */
+.recursive-b025-mono-linear-light {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 300, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-mono-linear-light-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 300, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-mono-casual-light {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 300, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-mono-casual-light-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 300, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-mono-linear {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 400, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-mono-linear-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 400, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-mono-casual {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 400, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-mono-casual-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 400, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-mono-linear-medium {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 500, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-mono-linear-medium-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 500, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-mono-casual-medium {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 500, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-mono-casual-medium-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 500, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-mono-linear-semibold {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 600, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-mono-linear-semibold-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 600, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-mono-casual-semibold {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 600, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-mono-casual-semibold-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 600, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-mono-linear-bold {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 696.7742004394531, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-mono-linear-bold-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 696.7742004394531, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-mono-casual-bold {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 696.7742004394531, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-mono-casual-bold-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 696.7742004394531, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-mono-linear-extrabold {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 800, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-mono-linear-extrabold-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 800, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-mono-casual-extrabold {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 800, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-mono-casual-extrabold-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 800, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-mono-linear-black {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 900, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-mono-linear-black-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 900, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-mono-casual-black {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 900, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-mono-casual-black-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 900, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-mono-linear-extrablack {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 1000, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-mono-linear-extrablack-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 1000, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-mono-casual-extrablack {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 1000, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-mono-casual-extrablack-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 1000, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-sans-linear-light {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 300, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-sans-linear-light-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 300, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-sans-casual-light {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 300, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-sans-casual-light-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 300, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-sans-linear {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 400, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-sans-linear-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 400, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-sans-casual {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 400, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-sans-casual-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 400, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-sans-linear-medium {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 500, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-sans-linear-medium-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 500, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-sans-casual-medium {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-sans-casual-medium-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-sans-linear-semibold {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 600, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-sans-linear-semibold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 600, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-sans-casual-semibold {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-sans-casual-semibold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-sans-linear-bold {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 696.7742004394531, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-sans-linear-bold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 696.7742004394531, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-sans-casual-bold {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 696.7742004394531, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-sans-casual-bold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 696.7742004394531, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-sans-linear-extrabold {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 800, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-sans-linear-extrabold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 800, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-sans-casual-extrabold {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 800, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-sans-casual-extrabold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 800, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-sans-linear-black {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 900, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-sans-linear-black-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 900, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-sans-casual-black {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 900, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-sans-casual-black-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 900, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-sans-linear-extrablack {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 1000, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-sans-linear-extrablack-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 1000, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-sans-casual-extrablack {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 1000, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-sans-casual-extrablack-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 1000, "slnt" -15, "ital" 1;
+}
+
+body {
+    font-family: Recursive-2019;
+}
+
+h1,.container {
+  font-family: Amstelvar-VF, serif;
+  font-variation-settings:
+    'wght' var(--text-wght),
+    'wdth' var(--text-wdth),
+    'opsz' var(--text-opsz),
+    'GRAD' var(--text-GRAD);
+}
+
+h1,.container {
+  font-size: 1.2rem;
+  --text-wght: 325;
+  --text-wdth: 100;
+  --text-opsz: 16;
+  --text-GRAD: 88;
+}
+
+amp-story-page-attachment {
+    background-color: white;
+    border-radius: 30px;
+}
+
+.cover {
+    text-align: center;
+    top: 80%;
+    position: relative;
+    color: #d92121;
+    font-size: 3em;
+    font-weight: 700;
+    font-style: oblique 0deg;
+    font-variation-settings:
+        "MONO" 0,
+        "CASL" 1,
+        "CRSV" 0.5;
+}
+
+.start {
+    text-align: center;
+    color: #d92121;
+    font-size: 40px;
+}
+
+.centered {
+    text-align: center;
+    font-size: 30px;
+    color: #01e7ff;
+    position: relative;
+    left: 50%;
+    margin-top: 150px;
+    background-color: gray;
+    transform: translate(-50%, -50%);
+}
+
+p {
+    padding: 10px;
+}
+
+@media screen and (max-width: 375px) {
+    .centered {
+        font-size: 15px;
+    }
+    .cover {
+        margin-top: 100px;
+        font-size: 15px;
+    }
+    amp-img {
+        opacity: 0.4;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 570px) {
+    .centered {
+        font-size: 15px;
+    }
+    .cover {
+        margin-top: 100px;
+        font-size: 20px;
+    }
+    amp-img {
+        opacity: 0.4;
+    }
+}
+
+@media screen and (min-width: 570px) and (max-width: 750px) {
+    .centered {
+        font-size: 15px;
+    }
+    .cover {
+        margin-top: 100px;
+        font-size: 25px;
+    }
+    amp-img {
+        opacity: 0.4;
+    }
+}
+
+@media screen and (min-width: 751px) and (max-width: 767px) {
+    .centered {
+        font-size: 20px;
+    }
+    .cover {
+        margin-top: 100px;
+        font-size: 20px;
+    }
+    amp-img {
+        opacity: 0.4;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .centered {
+        font-size: 25px;
+        padding-top: 40px;
+    }
+    .cover {
+        margin-top: 100px;
+        font-size: 25px;
+    }
+    amp-img {
+        opacity: 0.4;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .centered {
+        font-size: 30px;
+    }
+    .cover {
+        margin-top: 100px;
+        font-size: 25px;
+    }
+}
+
+/* from sample side-by-side */
+.story1 {
+        width:48%;
+        float:left;
+}
+
+.story2 {
+        width:48%;
+        float:right;
+}
+
+</style>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+</head>
+<body>
+
+<amp-story
+    supports-landscape
+    standalone
+    title="Hello Story"
+    publisher="Truett"
+    publisher-logo-src="https://example.com/logo/1x1.png"
+    poster-portrait-src="https://example.com/my-story/poster/3x4.jpg"
+>
+
+<amp-story-page
+    id="item-1"
+    data-item-label="Title Page"
+>
+
+<amp-story-grid-layer
+    template="fill"
+>
+<amp-video
+    autoplay
+    loop
+    grid-area="middle-third"
+    width="720"
+    height="960"
+    poster="https://bexecute.com/amp_story/vimage/Capture4.png"
+    layout="responsive"
+    alt="..."
+>
+<source
+    src="https://bexecute.com/amp_story/videos/video2.mp4"
+    type="video/mp4"
+></amp-video>
+
+<div class="cover">
+It's all about nature!!!
+<br>
+Look deep into nature
+<br>
+and then you will understand everything better
+</div>
+</amp-story-grid-layer>
+
+</amp-story-page>
+
+<amp-story-page
+    id="item-2"
+    data-item-label="Middle page"
+>
+<amp-story-grid-layer
+    template="fill"
+>
+<amp-img
+    data-hero
+    animate-in="fly-in-top"
+    animate-in-duration="2s"
+    animate-in-delay="0.25s"
+    src="https://bexecute.com/amp_story/images/nature4.jpg"
+    srcset="
+        https://bexecute.com/amp_story/images/nature4.webp 1920w,
+        https://bexecute.com/amp_story/images/nature4.webp 1438w,
+        https://bexecute.com/amp_story/images/nature41000.webp 1000w,
+        https://bexecute.com/amp_story/images/nature4700.webp 700w,
+        https://bexecute.com/amp_story/images/nature4500.webp 500w,
+        https://bexecute.com/amp_story/images/nature4300.webp 300w
+    "
+    width="1920"
+    height="1080"
+    layout="responsive"
+></amp-img>
+
+</amp-story-grid-layer>
+
+<amp-story-grid-layer
+    template="thirds"
+>
+<h1
+    class="start"
+    animate-in="twirl-in"
+    animate-in-duration="2s"
+    animate-in-delay="2.00s"
+>
+Nature
+</h1>
+<div class="container">
+<div class="centered">
+Nature is made of everything we see around us – trees, flowers, plants, animals, sky, mountains, forests and more.
+<br>
+Humans depend on nature to stay alive.
+<br>
+It helps us breathe, gives us food, water, shelter, medicines and clothes.
+</div>
+</div>
+</amp-story-grid-layer>
+
+</amp-story-page>
+
+<amp-story-page
+    id="item-3"
+    data-item-label="Page 3"
+>
+<amp-story-grid-layer
+    template="fill"
+>
+<amp-video
+    autoplay
+    loop
+    grid-area="middle-third"
+    width="720"
+    height="960"
+    poster="https://bexecute.com/amp_story/vimage/Capture3.png"
+    layout="responsive"
+    alt="..."
+>
+<source
+    src="https://bexecute.com/amp_story/videos/video3.mp4"
+    type="video/mp4"
+>
+</amp-video>
+</amp-story-grid-layer>
+
+<amp-story-page-attachment
+    layout="nodisplay"
+    data-cta-text="Read more"
+>
+<div class="para">
+<h2>
+About Nature
+</h2>
+<p>
+Nature is beautiful, nature is vast to define. In various religious rituals, nature is worshipped. The natural elements present naturally on earth are the main source of life. All elements are interrelated with each other. There is no substitute for natural elements. In the fast-growing world, humans process natural elements for their use. But the rawness and originality only come from nature.
+<br><br>
+Nature is affected by human activities and thus nature is losing its quality. Air Pollution and Water Pollution are the main sources of nature’s depletion.
+The single fully grown tree produces oxygen sufficient enough for ten people.
+<br><br>
+So, definitely, the amount of oxygen released by forest is sufficient for a city or town.Sunrays and fresh air are a blessing for our health. Various positive effects we can draw from nature on our bodies. People prefer natural places for their rehabilitation and vacations. Main motive is to introduce their children to natural beauty.
+<br><br>
+Nature refers to the natural resources and natural surroundings. The life species in nature are interrelated and create balance in nature. They form a natural food chain through which energy is passed to all the species. The series  of organisms in which each organism feeds on the one below it in the sequence is called the food chain in natural ecosystem. Food chain includes several plants, organisms, animals and other living species. This natural food chain is the source of energy for the forest species. The energy is passed from one creature to the other which helps them grow and survive.
+<br><br>
+For example in forest deer feeds on the grass and green plants and the tiger feeds on the deer. Plants get their energy form sunlight and nutrients from soil. Deer is herbivores animal. Herbivores animals depend on plants for energy and are vegetarians. Tiger is carnivorous animal. Carnivorous animals eat herbivores and sometimes other carnivorous for energy. So there is a whole chain that includes plants, herbivores, carnivorous and plants consume energy from sunlight. And there are lots of animals that eat plants and meat both. These are called omnivorous animals. For instance, black beer is an omnivorous animal. Some omnivorous also eat dead animals and those are called scavengers. Thus, the chain goes on.
+<br><br>
+All the species on earth are important for the survival of entire series of organisms and to balance the natural cycle.
+</p>
+<br>
+</div>
+</div>
+</div>
+</amp-story-page-attachment>
+
+</amp-story-page>
+
+<amp-story-page
+    id="item-4"
+    data-item-label="Page 4"
+>
+
+<amp-story-grid-layer
+    template="thirds"
+>
+<div>
+<div class="story1">
+<amp-iframe
+    data-iframe-label="Nature"
+    scrolling="no"
+    layout="fixed-height"
+    allow="fullscreen"
+    class="ap-o-sampler-iframe"
+    height="530"
+    sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-popups-to-escape-sandbox allow-presentation allow-top-navigation"
+    frameborder="0"
+    src="https://bexecute.com/amp_story/"
+    title="Nature video"
+>
+<div placeholder=""><div class="ap-o-sampler-iframe-source"></div></div>
+</amp-iframe>
+</div>
+
+<div class="story2">
+Nature is affected by human activities and thus nature is losing its quality. Air Pollution and Water Pollution are the main sources of nature’s depletion. The single fully grown tree produces oxygen sufficient enough for ten people.
+</div>
+</div>
+</amp-story-grid-layer>
+
+</amp-story-page>
+
+</amp-story>
+
+</body>
+</html>
