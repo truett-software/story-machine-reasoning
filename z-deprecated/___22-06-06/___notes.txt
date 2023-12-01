@@ -1,0 +1,11 @@
+
+subset
+
+<amp-story-page id="item-13" data-item-label="how-to-know">
+<amp-story-page id="item-16" data-item-label="einstein-riddle">
+<amp-story-page id="item-17" data-item-label="riddle-setup">
+<amp-story-page id="item-18" data-item-label="riddle-questions">
+<amp-story-page id="item-23" data-item-label="steps-to-solve-riddle">
+<amp-story-page id="item-27" data-item-label="protege-setup">
+<amp-story-page id="item-28" data-item-label="reasoner-active">
+<amp-story-page id="item-33" data-item-label="other applications">

@@ -1,0 +1,184 @@
+﻿TITLE: Machines Can Think Logically Too
+
+# Slide 1
+## Level 2
+How do you decide if you need to go to the supermarket and buy ingredients before you make dinner?
+
+    [OPTIONAL, but might be nice] Picture of someone looking at an open fridge?
+
+### Level 3
+#### Level 4
+
+# Slide 2
+## Level 2
+Humans use logic to connect the dots and make decisions.
+
+### Level 3
+You use logical reasoning for simple problem solving, it’s a cognitive skill we benefit from is all kinds of situations. 
+
+#### Level 4
+https://www.braingymmer.com/en/blog/logical-reasoning/
+
+# Slide 3
+## Level 2
+Machines use logic too, that is how they solve problems.
+
+### Level 3
+Logic is one of the main components used in many common computer algorithms, such as the ones that decide what Netflix film you will want to watch next.
+
+#### Level 4
+https://en.wikipedia.org/wiki/Logic_in_computer_science
+
+# Slide 4
+## Level 2
+One way to show how machines use logic is called the Einstein’s riddle
+
+### Level 3
+This riddle focuses on deductive reasoning. With deductive reasoning, facts are used to come to a logical conclusion. If all the facts are true and all the rules of deductive logic are followed to come to a conclusion, then the conclusion will also be true.
+
+#### Level 4
+https://en.wikipedia.org/wiki/Deductive_reasoning
+
+
+# Slide 5
+## Level 2
+Einstein’s riddle is a logic puzzle that gives sentences relating objects to each other. For example, The Ukrainian drinks tea.
+
+### Level 3
+Give an example of an Einstein’s Riddle
+
+    (maybe. We should give a more simple example that can be solve faster by the person looking at the puzzle?)
+
+There are five houses.
+* The Englishman lives in the red house.
+* The Spaniard owns the dog.
+* Coffee is drunk in the green house.
+* The Ukrainian drinks tea.
+* The green house is immediately to the right of the ivory house.
+* The Old Gold smoker owns snails.
+* Kools are smoked in the yellow house.
+* Milk is drunk in the middle house.
+* The Norwegian lives in the first house.
+* The man who smokes Chesterfields lives in the house next to the man with the fox.
+* Kools are smoked in the house next to the house where the horse is kept.
+* The Lucky Strike smoker drinks orange juice.
+* The Japanese smokes Parliaments.
+* The Norwegian lives next to the blue house.
+
+#### Level 4
+https://afdsi.com/___supplier/story-einstein-riddle/zebra-puzzle.txt
+
+# Slide 6
+## Level 2
+At the end, a question is asked on how certain objects related to each other. For example, who drinks water?
+
+### Level 3
+Give an example of a question for the previous Einsteins riddle
+* Now, who drinks water? Who owns the zebra?
+
+#### Level 4
+
+# Slide 7
+## Level 2
+Can you solve this Einstein’s Riddle?
+
+    [Put a button link or a picture of the whole puzzle, so that people can pause and try to solve it, you can also include some image of the manual solution with the table]
+
+### Level 3
+
+#### Level 4
+
+# Slide 8
+## Level 2
+Einstein’s riddles have been used to test how effective computer algorithms are at solving problems.
+
+### Level 3
+
+#### Level 4
+https://hrcak.srce.hr/file/252928
+
+
+# Slide 9
+## Level 2
+Computers use two main technologies to solve these problems: Ontologies and reasoners
+
+### Level 3
+
+#### Level 4
+
+
+# Slide 10
+## Level 2
+Ontologies are detailed descriptions of something. For your purposes, think of an architect blueprint.
+
+    [image of different nodes, similar to the computnet that you showed me]
+
+### Level 3
+In the puzzle we gave at the beginning, the nationality (English, spaniard, ukranian) is a classified as a property of a person, where as the position (first, middle, etc. ) is associated with the house. Computers are able to create relationships between the different classes to determine which person lives in which house.
+
+#### Level 4
+https://en.wikipedia.org/wiki/Web_Ontology_Language
+https://afdsi.com/ontomatica-home/
+
+# Slide 11
+## Level 2
+Reasoners are computer programs that are able to make connections between different objects in an ontology. For example, in our architect blueprint, which rooms should have a heater but do not.
+
+    [image of lines appearing between the different nodes from the previous picture in slide 10]
+
+### Level 3
+In our puzzle, If we know that the Englishman lives in the red house, we also know that he does not live in the blue house
+
+#### Level 4
+http://www.hermit-reasoner.com
+
+# Slide 12
+## Level 2
+So now, let’s look at how a computer would solve the riddle
+    include your slide image showing how it does it
+
+### Level 3
+https://afdsi.com/___supplier/story-einstein-riddle/einstein-riddle-part-1.png
+
+https://afdsi.com/___supplier/story-einstein-riddle/einstein-riddle-description-OWL.html
+
+# Slide 13
+## Level 2
+The computer creates different objects including the nationality, drink, pet and house of each person with the information available, and by using reasoners, fills in the gaps.
+
+### Level 3
+
+    is it possible to make a video showing how fast the computer can do this or is it too fast?
+
+#### Level 4
+
+# Slide 14
+## Level 2
+The advantage of having computers solving these problems is that they can be much quicker and have many more variables than what person can do by hand.
+
+### Level 3
+
+#### Level 4
+
+# Slide 15
+## Level 2
+They also have a wide variety of uses, from helping you choose your next Netflix movie, to more scientific applications like learning about cosmic relationships or helping doctors diagnose diseases
+
+### Level 3
+
+#### Level 4
+https://www.datasciencecentral.com/ontologies-practical-applications/
+
+
+# Slide 16
+## Level 2
+An open system that uses these tools is Protege, developed by Stanford and free to use. If you want to explore how else you can use ontologies and reasoners, click here
+
+    [include a link to protege]
+
+### Level 3
+Protege screenshot
+
+#### Level 4
+https://protege.stanford.edu
+

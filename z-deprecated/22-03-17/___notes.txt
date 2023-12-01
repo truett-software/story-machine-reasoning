@@ -1,0 +1,20 @@
+
+add recursive
+add amstelvar
+add iframe
+
+add model slides from SDL
+side-by-side
+    image, text
+side-by-side
+    iframe
+full screen
+others
+
+add pages from future stories
+    item
+    item
+    item
+
+add with class="null"
+

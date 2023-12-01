@@ -1,0 +1,19 @@
+
+Have you ever wondered whether the drugs you consume daily, such as blood pressure medications and antihistamines, interact with one another?
+
+Drug, supplement or foods affect how medication stays in the body, often by stimulating or inhibiting the production of specific enzymes in the liver or intestine.
+
+Enzymes play an important role in metabolizing drugs and interactions can make a drug more powerful, whereby a standard dose can become an overdose or it can be rendered less potent or ineffective.
+
+Several foods can also block or stimulate the enzymes that break down drugs.
+
+The human body also breaks down drugs differently.
+
+How to organize information so we can determine whether chemical interactions (drugs, supplements, flavors) are what we want or what we don't want?
+
+In this graph, biomedical concepts such as drugs, diseases, and side effects are represented as entities, while the edges in the graph denote their respective relationships.
+
+For example, an edge between two drug entities might indicate a potential drug-to-drug interaction, while an edge between a drug and a disease entity might describe a treatment.
+
+
+We organize data into similar graphs to connect the dots.

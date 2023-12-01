@@ -1,0 +1,27 @@
+
+TODO
+
+move to aws/s3
+E:\content\_main\___projects\__story-ctd-einstein-reasoning
+_reference-docs-files
+_riddle-docs
+
+
+missing on S3/media/background-svg
+
+background-neural-network-440044-FFE1FFW-w400-h371.svg
+background-130F30-constellation-w997-h997.svg
+background-440044-constellation-w997-h997.svg
+
+
+
+summarize status and next steps
+
+use shared-s3-libraries
+	fonts
+	backgrounds
+
+use local-s3-libraries
+	reference documents
+	quiz backgrounds
+	images
