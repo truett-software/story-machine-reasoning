@@ -1,0 +1,30 @@
+
+includes experiment
+  color, e.g. ctx-black-alt
+
+10/30/2023
+
+keep old color definitions
+replace SVG and PNG with truett WEBP
+keep survey data on AWS for now
+Reference HTML files are local to repo
+
+
+12/07/2023
+
+ISSUES
+convert many SVG to WEBP
+src="./img/diagram-drug-drug-interaction-w1479-h643.svg"
+
+leave the inline build SVG as-is
+
+google doc reader works correctly when target file is on GH
+
+WEBP from SVG must have clear background
+
+
+LEAVE AS IS
+https://ontomatica.io/a/12370110501010001961/
+https://truett-software.github.io/story-machine-reasoning/docs/story/html/riddle-owl/riddle-owl-w2048-h50840.svg
+https://truett-software.github.io/story-machine-reasoning/docs/story/html/riddle-yaml/einstein-riddle.yaml-w1818-h13142.svg
+
