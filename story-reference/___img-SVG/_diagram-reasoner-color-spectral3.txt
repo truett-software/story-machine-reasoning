@@ -1,0 +1,30 @@
+
+/* ontology */
+#path06 {
+    fill: #ffffbf;
+}
+
+/* rules, orange */
+#path08 {
+    fill: #fc8d59;
+}
+
+/* rules, green */
+#path10 {
+    fill: #99d594;
+}
+
+/* ontology */
+#path16 {
+    fill: #ffffbf;
+}
+
+/* rules, orange */
+#path18 {
+    fill: #fc8d59;
+}
+
+/* rules, green */
+#path20 {
+    fill: #99d594;
+}
